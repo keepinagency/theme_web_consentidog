@@ -1,0 +1,360 @@
+@charset "UTF-8";
+/*
+Theme Name: ConsentiDog -  Prueba repo
+Theme URI: https://www.keepin.com.ve/
+Author: Team Keepin
+Author URI: https://www.keepin.com.ve
+Description: Primera versión del tema para la Web de ConsentiDog. Uso exclusivo de ConsentiDog 
+Version: 0.0.1 
+Text Domain: Keepin
+WordPress Available:  yes
+*/
+body {
+    font-family: 'Cricket', arial;
+    color: #201716;
+  }
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: #333;
+}
+        /***Contenedor de contenido central BODY***
+        ******************************************/
+.cont-central{
+    padding: 0px;
+    margin: 0px;
+    margin-top:20px !important;
+    margin-bottom: -10px;
+    min-height: calc(100vh - 245px);
+    /*background-color: #dddd44;   PaleGreen   */
+}
+        /***Override Bootstrap's default container***
+        *********************************************/
+@media (min-width: 1200px) {
+    .container {
+      padding: 0px;
+      margin: 0px;
+      width: 100%;
+      /*border: thin solid #B0B;
+      background-image: url('http://127.0.0.1:8080/ConsentiDog/wp-content/uploads/2019/07/Dog-1200x800.jpg'); 
+      background-size: cover;
+      background-repeat: none;
+      opacity: 0.5;*/
+    }
+    .row{
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+        /***HEADER***
+        *************/
+.header {
+    width: 100%;
+    height: 170px;
+    border: thin solid red;
+}
+.number-header{
+    background-color: rgb(179, 177, 175);
+    text-align: right;
+    color: rgb(117, 114, 114);
+    margin: 0px;
+}
+.area-logo{
+    padding: 0px;
+    padding-left: 30px;
+    margin: 0px;
+    height: 100%;
+    /*background-color: #F8F8FF;  GhostWhite */
+    border: thin solid blue;
+}
+.area-menu{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    position: relative;
+}
+/** Menu header **/
+.header-menu {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    padding-right: 20px;
+    font-size: 20px;
+    text-align: right;
+    position: absolute;
+    top: 35%;
+}
+.header-menu li{
+    padding: 5px;
+    display: inline-block;
+}
+.header-menu a{
+    text-decoration: none;
+    color: #201716;
+}
+.header-menu a:hover{
+    color:#696766;
+}
+
+
+        /*** Buscador ***/
+.menu-item .search-form input{
+	width: 80%;
+	padding: 0;
+	height: 30px;
+	padding: 8px;
+	border-radius: 6px;
+}
+.menu-item .search-form input::-moz-placeholder {
+  color: #ccc;
+  font-weight: 20px;
+}
+.item-search{
+	margin-top: 0px;
+}
+.menu-item .search-form input[type="submit"]{
+	width: 22px;
+	height: 22px;
+	padding: 0;
+    margin:0;
+	margin-left: 5px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: 16px;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Feedbin-Icon-home-search.svg/36px-Feedbin-Icon-home-search.svg.png);
+}
+    /***HOME - FORMULARIO***
+    ************************/
+.home-post{
+    background: #333;
+    width:17%;
+    height: 230px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+.contenido-home{
+    text-align: center;
+    margin-top: -50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.wpcf7-date {
+    width: 150px;
+    height: 37px;
+    border-radius: 10px;
+}
+
+.wpcf7-submit.btnhome{
+    Color:red;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+    /*******HOME - EDUCA*******
+    **************************/
+.contenedor-educa{
+    background-image:url('http://127.0.0.1:8080/ConsentiDog/wp-content/uploads/2019/08/Obediencia.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+.titulo-educadog{
+    text-align: center;
+    font-size: 25px;
+    padding: 20px;
+}
+.titulo_educa{
+    font-size: 30px;
+}
+.link_educa{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+    /*******HOME - SERVICIOS*******
+    ******************************/
+.link_servicios{
+    display: inline-block;
+    text-align: center;
+    float: left;
+    width: 50%;
+}
+    /*******HOME - BLOG*******
+    **************************/
+.link_blog{
+    display: inline-block;
+    float: left;
+    text-align: center;
+    width: 33%;
+}
+.iconcontacto{
+    margin-left: 100px !important;
+    margin-top: -18px !important;
+}
+    /*******HOME - CITA*******
+    **************************/
+.contenedor-cita{
+    display: inline-flex;
+}
+.citahome{
+    font-size: 50px;
+    width: 70%;
+}
+.citaautor{
+    font-size: 20px;
+    font-style: italic;
+    width: 30%;
+}
+        /**********************************************************
+        ************CONTENEDOR GENERAL PARA PAGES - DEFAULT*********/
+        /*IMAGEN*/
+.imagen-pages{
+    background-image: url('http://127.0.0.1:8080/ConsentiDog/wp-content/uploads/2019/07/perrito_lindo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+        /*Título*/
+.titulo-pages{
+    color: #E5E5E5;
+    padding-top: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+/***CUSTOM TITULO****/
+.custom-titulo{
+    text-align: center;
+    font-size: 26px;
+    color: #FE330A;
+}
+/*Contenido*/
+.contenedor-contenido{
+    padding: 50px;
+    background: rgba(229, 229, 229, 0.7);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+        /*********** BLOG ***********
+        ****************************/
+.imagen-blog{
+    background-image: url('http://127.0.0.1:8080/ConsentiDog/wp-content/uploads/2019/08/Portada-blog.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenedor-blog{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(177, 171, 171);
+    display: inline-block;
+    text-align: center;
+}
+.listas-blog{
+    width: 100%;
+    display: inline-block;
+}
+.link-entradablog{
+    display: inline-block;
+    width: 30%;
+    border: thin solid black;
+    text-align: center;
+    margin: 10px;
+}
+.titulo-entradablog{
+    font-size: 18px;
+}
+.extracto-blog{
+    width: 100%;
+    text-align: justify;
+}
+        /*********** SERVICIOS ***********
+        *********************************/
+.titulo-entradaservicios{
+    font-size: 18px;
+    text-align: center;
+}
+.contenedor-servicios{
+    border: thin solid#201716;
+}
+.link-entradaservicios{
+    text-align: center;
+    border: thin solid red;
+    background: rgba(229, 229, 229, 0.7);
+    padding: 30px;
+}
+.contenido-servicios{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btnservicios{ 
+    margin: 30px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 1.2em;
+    height: 40px;
+    width: 150px;
+}
+        /*********** CONTACTANOS FORM ***********
+        ****************************************/
+.imagen-contacto{
+    background-image: url('http://127.0.0.1:8080/ConsentiDog/wp-content/uploads/2019/07/Keepin-Contactanos.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 800px;
+}
+.contenedor-contenidoform{
+    text-align: center;
+    background: rgba(229, 229, 229, 0.7);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titulo-pagesform{
+    padding-top: 30px;
+    font-size: 26px;
+    text-align: center;
+    color: #201716;
+}
+.wpcf7-form{
+    margin-top: 30px;
+    padding: 30px 0px 30px 0px;
+}
+.wpcf7-text {
+    width: 500px;
+    height: 40px;
+} 
+.wpcf7-textarea {
+    width: 500px;
+    height: 160px;;
+}
+.wpcf7-text::placeholder{
+    text-align: center;
+    font-size: 14px;
+}
+.wpcf7-textarea::placeholder{
+    text-align: center;
+    line-height: 140px;
+    font-size: 14px;
+}
+.wpcf7-submit {
+    bottom: 0px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 1.2em;
+    height: 40px;
+    width: 150px;
+}
