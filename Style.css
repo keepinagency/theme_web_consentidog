@@ -15,7 +15,6 @@ WordPress Available:  yes
     height: 100%;
     width: 100%;
 }
-
 */
 body {
     /*font-family: 'Cricket', arial;*/
@@ -23,7 +22,6 @@ body {
     color: #201716;
     background-color: #D1D1D1;
 }
-
 /*
 h1, .h1,
 h2, .h2,
@@ -36,9 +34,6 @@ h6, .h6 {
     font-weight: normal;
     color: #333;
 }*/
-
-
-
 /***  Override Bootstrap's default container ***
 *********************************************/
 /*@media (min-width: 1200px) {
@@ -60,13 +55,12 @@ h6, .h6 {
     }
 }*/
 
-/*** HEADER ***
-*************/
+    /*** HEADER ***
+    **************/
 .header{
     border: thin solid yellow;
     height: 180px;
 }
-
 .subheader {
     height: 147px;
     background-color: rgba(255 , 255, 255, 0.5);
@@ -74,21 +68,16 @@ h6, .h6 {
 .area-logo{
     height: 100%;
 }
-
 .navbar-brand{
     line-height: 130px;
     width: 100%;
 }
-
-
 .imglogo{
     width: 337px;
 }
-
 .buscador{
     line-height: 130px;
 }
-
 .buscador_txt{
     text-align: center;
     font-size: 1em;
@@ -98,20 +87,12 @@ h6, .h6 {
     border: thin solid white;
     width: 300px;
 }
-
-
 .area-menu{
     margin: 0px;
     padding: 0px;
     height: 33px;
     background-color: rgba(255 , 255, 255, 0.7);
 }
-
-
-
-
-
-
 /** Menu header **/
 .header-menu {
     margin: 0px;
@@ -145,8 +126,6 @@ h6, .h6 {
     margin: 0px;
     border: thin solid grey;
 }
-
-
     /***HOME - FORMULARIO***
     ************************/
 /*.home-post{
@@ -177,25 +156,37 @@ h6, .h6 {
     /*******HOME - EDUCA******
     **************************/
 .contenedor-educa{
-    background-image:url("../theme_web_consentidog/img/ConsentiDog-Obediencia.jpg");
+    background-image:url("../theme_web_consentidog/img/bg_home_obediencia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 750px;
 }
-
 .titulo-educadog{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
     padding: 20px;
+    color:#E5E5E5;
 }
-.titulo_educa{
-    font-size: 30px;
+.titulo_educa {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Simply Criket Demibold';
+    color: #201716;
+    margin-bottom: 10px;
+    border-bottom: thin solid #201716;
 }
 .link_educa{
-    /*display: inline-block;*/
     float: left;
-    text-align: center;
-    width: 33%;
+    background-color: rgba(255 , 255, 255, 0.7);
+    padding-top: 40px;
+    margin: 6px;
+    margin-left: 10px;
+    width: 32%;
+    height: 600px;    
+}
+.extracto-educa{
+    font-size: 0.8em;
+    padding: 50px 30px 0px 30px;
 }
     /*******HOME - SERVICIOS*********∫*
     ******************************/
