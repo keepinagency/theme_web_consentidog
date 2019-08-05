@@ -169,7 +169,7 @@ h6, .h6 {
 }
 .titulo_educa {
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.2em;
     font-family: 'Simply Criket Demibold';
     color: #201716;
     margin-bottom: 10px;
@@ -185,8 +185,17 @@ h6, .h6 {
     height: 600px;    
 }
 .extracto-educa{
-    font-size: 0.8em;
-    padding: 50px 30px 0px 30px;
+    font-size: 1em;
+    padding: 50px 50px 0px 50px;
+}
+.btneduca{
+    margin: 60px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 1.2em;
+    height: 40px;
+    width: 150px;
 }
     /*******HOME - SERVICIOS*********∫*
     ******************************/

@@ -18,6 +18,7 @@ $nuevo_arreglo = new WP_Query(array(
                     <div class="link_educa col-md-4 text-center">
                         <a class="titulo_educa" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                         <div class="extracto-educa"><?php the_content();?></div>
+                        <input class="btneduca" type="submit" name="solicitar" value ="MÁS INFO">
                     </div>
             <?php endwhile;?>
 		</div>
