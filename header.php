@@ -18,14 +18,8 @@
 <div class="container p-sm-0 m-sm-0">
     
     <div class="header">
-        <!--llamanos-->
-        <div class="telefono-header">
-            <p class="number-header">
-                <?php $text = get_option('textphone');?>
-                Llamanos:<?php echo $text;?></p>
-        </div>
         <!--Area logo-->
-        <div class="area-logo col-sm-4">
+        <div class="area-logo col-sm-6 align-center">
             <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
                 <?php
                     $custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -34,8 +28,9 @@
                 ?>
             </a>
         </div>
+        <div class="area-buscador col-sm-6 align-center"><?php echo do_shortcode("[wpbsearch]"); ?></div>
         <!--Area menu-->
-        <div class="area-menu col-sm-8 align-center">
+        <div class="area-menu col-sm-12">
             <?php
                 wp_nav_menu( array(
                     'theme_location'  => 'header-menu',

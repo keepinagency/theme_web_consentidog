@@ -45,22 +45,17 @@ function consentidog_register_menu() {
     register_nav_menu( 'footer-menu', __('Footer Menu'));
 
 }
-/**Buscador en menu**/
-function ConsentiDogbuscador( $items, $args ) {
-	if ($args->theme_location == 'header-menu') {
-		$items .= '<li class="menu-item item-search">'
-				. '<form role="search" method="get" class="search-form" action="'.home_url( '/' ).'">'
-				. '<label>'
-				. '<span class="screen-reader-text">' . _x( '', 'label' ) . '</span>'
-				. '<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Buscar...', 'placeholder' ) . '" value="' . get_search_query() . '" name="s" title="' . esc_attr_x( 'Search for:', 'label' ) . '" />'
-				. '</label>'
-				. '<input type="submit" class="search-submit" value="" />'
-				. '</form>'
-				. '</li>';
-	}
-	return $items;
+/**Buscador en Header**/
+function busquedaform( $form ) {
+    $form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
+    <div><label class="screen-reader-text" for="s">' . __('') . '</label>
+    <input type="text" placeholder="BUSQUEDA" class="buscador_txt" value="' . get_search_query() . '" name="s" id="s" />
+    <!--input type="submit" class="" id="searchsubmit" value="'. esc_attr__('Buscar') .'" /-->
+    </div>
+    </form>';
+    return $form;
 }
-        /***FUNCIONES CUSTOM PARA EL EXTRACTO DEL BLOG*****
+        /*******FUNCIONES CUSTOM PARA EL EXTRACTO *********
         **************************************************/
 function custom_excerpt_length( $length){
     return 20;
@@ -73,26 +68,6 @@ function custom_consentidog_register( $wp_customize ) {
     $wp_customize->add_panel( 'consentidog', array(
         'title' => 'Configuraciones',
         'description' => 'Opciones personales',
-        'priority' => 1,
-    ));
-    /*******Agrego la Sección Telefono Header**************
-    *******************************************************/
-    $wp_customize->add_section( 'Phone-Header', array(
-        'title' => __( 'Contacto Header', 'textdomain' ),
-        'panel' => 'consentidog',
-        'priority' => 1,
-    ));
-    /**Agrego el Setting Telefono Header**/
-    $wp_customize->add_setting( 'textphone', array (
-        'type' => 'option',
-        'default' => '(9999)999.99.99',
-        'capability' => 'edit_theme_options',
-    ));
-    /**Agrego el control**/
-    $wp_customize->add_control( 'textphone', array(
-        'label' => __( 'Telefono Header', 'textdomain' ),
-        'section' => 'Phone-Header',
-        'type' => 'text',
         'priority' => 1,
     ));
     /*******AGREGO SECCIÓN PARA SOCIALMEDIA FOOTER**********
@@ -233,7 +208,7 @@ function custom_consentidog_register( $wp_customize ) {
         'priority' => 2,
     ));
 }
-    /********* METABOXES PARA EL TITULO DEL BLOG ***********
+    /************** METABOXES PARA EL TITULO ****************
     ********************************************************/
 function meta_box_titulo() {
     add_meta_box('titulo','Indique el titulo a ser usado para esta página.','el_titulo','page','normal','high');
@@ -253,7 +228,6 @@ function guardar_titulo() {
     update_post_meta($post_id, 'titulo', $price);
 }
 
-
     /****** AÑADIR ACCIONES EN BASE A LAS FUNCIONES DEFINIDAS ******
     ***************************************************************/ 
 add_action( 'wp_enqueue_scripts', 'consentidog_enqueue_styles' );   // Css
@@ -266,7 +240,5 @@ add_action( 'after_setup_theme', 'consentidog_thumbnails' );        // thumbnail
 add_action('add_meta_boxes', 'meta_box_titulo');                    //Metaboxes
 add_action('save_post', 'guardar_titulo');                          //guardar titulo metabox
 add_action('publish_post', 'guardar_titulo');                       //Publicar título metabox en post
-/*** Añadir acción en este caso filtro para el buscador ***/
-add_filter( 'wp_nav_menu_items', 'ConsentiDogbuscador', 10, 2);     // Buscador 
-
+add_shortcode('wpbsearch', 'busquedaform');                         // Buscador en Header
 ?>

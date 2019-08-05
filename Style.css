@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-Theme Name: ConsentiDog -  Prueba repo
+Theme Name: Keepin - ConsentiDog
 Theme URI: https://www.keepin.com.ve/
 Author: Team Keepin
 Author URI: https://www.keepin.com.ve
@@ -59,20 +59,18 @@ h6, .h6 {
     width: 100%;
     height: 170px;
     border: thin solid red;
-}
-.number-header{
-    background-color: rgb(179, 177, 175);
-    text-align: right;
-    color: rgb(117, 114, 114);
-    margin: 0px;
+    text-align: center;
 }
 .area-logo{
-    padding: 0px;
     padding-left: 30px;
     margin: 0px;
     height: 100%;
     /*background-color: #F8F8FF;  GhostWhite */
     border: thin solid blue;
+}
+.area-buscador{
+    margin-left: auto;
+    margin-right: auto;
 }
 .area-menu{
     margin: 0px;
@@ -102,37 +100,12 @@ h6, .h6 {
 .header-menu a:hover{
     color:#696766;
 }
-
-
-        /*** Buscador ***/
-.menu-item .search-form input{
-	width: 80%;
-	padding: 0;
-	height: 30px;
-	padding: 8px;
-	border-radius: 6px;
-}
-.menu-item .search-form input::-moz-placeholder {
-  color: #ccc;
-  font-weight: 20px;
-}
-.item-search{
-	margin-top: 0px;
-}
-.menu-item .search-form input[type="submit"]{
-	width: 22px;
-	height: 22px;
-	padding: 0;
-    margin:0;
-	margin-left: 5px;
-	background-color: #fff;
-	background-repeat: no-repeat;
-	background-size: 16px;
-	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Feedbin-Icon-home-search.svg/36px-Feedbin-Icon-home-search.svg.png);
+.buscador_txt{
+    text-align: center;
 }
     /***HOME - FORMULARIO***
     ************************/
-.home-post{
+/*.home-post{
     background: #333;
     width:17%;
     height: 230px;
@@ -156,7 +129,7 @@ h6, .h6 {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-}
+}*/
     /*******HOME - EDUCA*******
     **************************/
 .contenedor-educa{
