@@ -46,7 +46,7 @@ h6, .h6 {
       background-image: url('http://127.0.0.1:8080/ConsentiDog/wp-content/uploads/2019/07/Dog-1200x800.jpg'); 
       background-size: cover;
       background-repeat: none;
-      opacity: 0.5;*/
+      opacity: 0.5;****/
     }
     .row{
       padding: 0px;
@@ -153,15 +153,15 @@ h6, .h6 {
     font-size: 30px;
 }
 .link_educa{
-    display: inline-block;
+    /*display: inline-block;*/
     float: left;
     text-align: center;
     width: 33%;
 }
-    /*******HOME - SERVICIOS*******
+    /*******HOME - SERVICIOS*********∫*
     ******************************/
 .link_servicios{
-    display: inline-block;
+    /*display: inline-block;*/
     text-align: center;
     float: left;
     width: 50%;
@@ -169,7 +169,7 @@ h6, .h6 {
     /*******HOME - BLOG*******
     **************************/
 .link_blog{
-    display: inline-block;
+    /*display: inline-block;*/
     float: left;
     text-align: center;
     width: 33%;
