@@ -15,20 +15,32 @@
 </head>
 
 <body <?php body_class(); ?>> 
-<div class="container p-sm-0 m-sm-0">
+<div class="container-fluid p-sm-0 m-sm-0">
     
-    <div class="header">
-        <!--Area logo-->
-        <div class="area-logo col-sm-6 align-center">
-            <a class="navbar-brand" href="<?php echo get_home_url(); ?>">
-                <?php
-                    $custom_logo_id = get_theme_mod( 'custom_logo' );
-                    $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
-                    echo '<img class="imglogo " src="' . esc_url( $custom_logo_url ) . '" alt="Logo ">';
-                ?>
-            </a>
-        </div>
-        <div class="area-buscador col-sm-6 align-center"><?php echo do_shortcode("[wpbsearch]"); ?></div>
+    <div class="header p-0 m-0">
+        <div class="subheader row p-0 m-0">
+            <!--Area logo-->
+            <div class="area-logo col-sm-5 p-0 m-0" >
+                <a class="navbar-brand m-0 p-0 text-center" href="<?php echo get_home_url(); ?>">
+                    <?php
+                        $custom_logo_id = get_theme_mod( 'custom_logo' );
+                        $custom_logo_url = wp_get_attachment_image_url( $custom_logo_id , 'full' );
+                        echo '<img class="imglogo align-middle " 
+                            src="'.esc_url( $custom_logo_url ).'" 
+                            alt="Logo " >';
+                    ?>
+                </a>
+            </div>
+            <div class="col-sm-2">
+                &nbsp;
+            </div>
+            <div class="area-buscador text-center col-sm-5">
+                <div class="buscador">
+                    <?php echo do_shortcode("[wpbsearch]"); ?>
+                </div>
+            </div>
+        </div><!-- header -->
+        
         <!--Area menu-->
         <div class="area-menu col-sm-12">
             <?php
@@ -39,7 +51,6 @@
                 );
             ?>
         </div>
-
-    </div><!-- header -->
+    </div><!-- header --> 
 
     <div class="row cont-central p-0 m-0">

@@ -1,6 +1,12 @@
 <?php
 /* Libreria bootstrap para Nav - Menu */
-require_once('class-wp-bootstrap-navwalker.php');
+/*require_once('class-wp-bootstrap-navwalker.php');*/
+if ( ! file_exists( get_template_directory() . '/class-wp-bootstrap-navwalker.php' ) ) {
+    return new WP_Error( 'class-wp-bootstrap-navwalker-missing', __( 'It appears the class-wp-bootstrap-navwalker.php file may be missing.', 'wp-bootstrap-navwalker' ) );
+} else {
+    require_once trailingslashit( get_template_directory() ) . '/class-wp-bootstrap-navwalker.php';
+}
+
 
 /*Definicion de rutas TEMP_PARTS*/
 define( 'Consentidog_VERSION', '0.0.1' );
@@ -29,7 +35,8 @@ function consentidog_thumbnails() {
 /*** Carga de Archivos CSS y Js para el site ***/
 function consentidog_enqueue_styles() {
     /*** Archivos CSS Bootstrap ***/
-    wp_register_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );
+    /*wp_register_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );*/
+    wp_register_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' );
     $dependencies = array('bootstrap');
 	wp_enqueue_style( 'consentidog-style', get_stylesheet_uri(), $dependencies ); 
 }      
@@ -47,11 +54,13 @@ function consentidog_register_menu() {
 }
 /**Buscador en Header**/
 function busquedaform( $form ) {
-    $form = '<form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-    <div><label class="screen-reader-text" for="s">' . __('') . '</label>
-    <input type="text" placeholder="BUSQUEDA" class="buscador_txt" value="' . get_search_query() . '" name="s" id="s" />
-    <!--input type="submit" class="" id="searchsubmit" value="'. esc_attr__('Buscar') .'" /-->
-    </div>
+    $form = '
+    <form class="align-middle" role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
+        <div>
+            <label class="screen-reader-text" for="s">' . __('') . '</label>
+            <input type="text" placeholder="BUSQUEDA" class="buscador_txt" value="' . get_search_query() . '" name="s" id="s" />
+            <!--input type="submit" class="" id="searchsubmit" value="'. esc_attr__('Buscar') .'" /-->
+        </div>
     </form>';
     return $form;
 }
