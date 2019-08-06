@@ -9,7 +9,7 @@
 	 $icono_ct = get_option( 'contactologo', '/img/contactomail.png' );
 	 $icono_ph = get_option( 'phoneicono', '/img/contactophone.png' );
 ?>
-</div><!-- /.row -->
+<!--/div><!-- /.row -->
 </div><!-- /.container -->
 <footer class="footer">
 	<div class="menufoot col-sm-8">

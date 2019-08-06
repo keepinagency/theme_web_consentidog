@@ -58,7 +58,7 @@ function busquedaform( $form ) {
     <form class="align-middle" role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
         <div>
             <label class="screen-reader-text" for="s">' . __('') . '</label>
-            <input type="text" placeholder="BUSQUEDA" class="buscador_txt" value="' . get_search_query() . '" name="s" id="s" />
+            <input type="text" placeholder="BÚSQUEDA" class="buscador_txt" value="' . get_search_query() . '" name="s" id="s" />
             <!--input type="submit" class="" id="searchsubmit" value="'. esc_attr__('Buscar') .'" /-->
         </div>
     </form>';
