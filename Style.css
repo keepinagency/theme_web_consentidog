@@ -25,7 +25,6 @@ WordPress Available:  yes
     height: 100%;
     width: 100%;
 }
-
 */
 body {
     /*font-family: 'Cricket', arial;*/
@@ -35,8 +34,12 @@ body {
     font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     font-weight: normal;
 }
+<<<<<<< HEAD
 
 
+=======
+/*
+>>>>>>> 901e432e66b241516a46fb02d489af2fcb294a0b
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -47,10 +50,14 @@ h6, .h6 {
     font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     font-weight: normal;
     color: #333;
+<<<<<<< HEAD
 }
 
 
 
+=======
+}*/
+>>>>>>> 901e432e66b241516a46fb02d489af2fcb294a0b
 /***  Override Bootstrap's default container ***
 *********************************************/
 /*@media (min-width: 1200px) {
@@ -72,8 +79,8 @@ h6, .h6 {
     }
 }*/
 
-/*** HEADER ***
-*************/
+    /*** HEADER ***
+    **************/
 .header{
     /*border: thin solid yellow;*/
     height: 180px;
@@ -92,7 +99,6 @@ h6, .h6 {
     opacity: 0.3;
     filter: alpha(opacity=30); 
 }
-
 .subheader {
     height: 147px;
     background-color: rgba(255 , 255, 255, 0.5);
@@ -100,21 +106,16 @@ h6, .h6 {
 .area-logo{
     height: 100%;
 }
-
 .navbar-brand{
     line-height: 130px;
     width: 100%;
 }
-
-
 .imglogo{
     width: 337px;
 }
-
 .buscador{
     line-height: 130px;
 }
-
 .buscador_txt{
     text-align: center;
     font-size: 1em;
@@ -124,8 +125,6 @@ h6, .h6 {
     border: thin solid white;
     width: 300px;
 }
-
-
 .area-menu{
     margin: 0px;
     padding: 0px;
@@ -133,12 +132,6 @@ h6, .h6 {
     width: 100%;
     background-color: rgba(255 , 255, 255, 0.7);
 }
-
-
-
-
-
-
 /** Menu header **/
 .header-menu {
     margin: 0px;
@@ -174,6 +167,7 @@ h6, .h6 {
     margin: 0px;
     border: thin solid grey;
 }
+<<<<<<< HEAD
 
 /*** HOME - FORMULARIO ***
 ************************/
@@ -214,6 +208,8 @@ h6, .h6 {
   }
 
 
+=======
+>>>>>>> 901e432e66b241516a46fb02d489af2fcb294a0b
     /***HOME - FORMULARIO***
     ************************/
 /*.home-post{
@@ -244,25 +240,46 @@ h6, .h6 {
     /*******HOME - EDUCA******
     **************************/
 .contenedor-educa{
-    background-image:url("../theme_web_consentidog/img/ConsentiDog-Obediencia.jpg");
+    background-image:url("../theme_web_consentidog/img/bg_home_obediencia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 750px;
 }
-
 .titulo-educadog{
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
     padding: 20px;
+    color:#E5E5E5;
 }
-.titulo_educa{
-    font-size: 30px;
+.titulo_educa {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Simply Criket Demibold';
+    color: #201716;
+    margin-bottom: 10px;
+    border-bottom: thin solid #201716;
 }
 .link_educa{
-    /*display: inline-block;*/
     float: left;
-    text-align: center;
-    width: 33%;
+    background-color: rgba(255 , 255, 255, 0.7);
+    padding-top: 40px;
+    margin: 6px;
+    margin-left: 10px;
+    width: 32%;
+    height: 600px;    
+}
+.extracto-educa{
+    font-size: 1em;
+    padding: 50px 50px 0px 50px;
+}
+.btneduca{
+    margin: 60px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-size: 1.2em;
+    height: 40px;
+    width: 150px;
 }
     /*******HOME - SERVICIOS*********∫*
     ******************************/
