@@ -8,14 +8,13 @@ $nuevo_arreglo = new WP_Query(array(
 ));
 ?>
 
-<div class="row contenedor-servicioshome">
+<div class="contenedor-servicioshome">
     <?php if ($nuevo_arreglo->have_posts()) :?>
-        <div><h1>Servicios</h1></div>
         <div class="listas_servicios">
         <?php
         while ($nuevo_arreglo->have_posts()) :
 			$nuevo_arreglo->the_post();?>
-                <div class=link_servicios>
+                <div class="link_servicios">
                     <a class="titulo_servicios" href="<?php the_permalink(); ?>"><?php the_title(); ?>
                         <div class="miniatura_servicios"><?php the_post_thumbnail('medium');?></div>
                     </a>
