@@ -18,12 +18,13 @@ WordPress Available:  yes
     font-style: normal;
   }
 
+
+
 /*html {
     min-height: 100%;
     height: 100%;
     width: 100%;
 }
-
 */
 body {
     /*font-family: 'Cricket', arial;*/
@@ -70,8 +71,8 @@ h6, .h6 {
     }
 }*/
 
-/*** HEADER ***
-*************/
+    /*** HEADER ***
+    **************/
 .header{
     /*border: thin solid yellow;*/
     height: 180px;
@@ -80,7 +81,9 @@ h6, .h6 {
     width: 100%;
     top: 0px;
     z-index: 100000 !important;
+    
 }
+
 .header_home{
     z-index: 100000 !important;
     position: relative;
@@ -88,7 +91,6 @@ h6, .h6 {
     opacity: 0.3;
     filter: alpha(opacity=30); 
 }
-
 .subheader {
     height: 147px;
     background-color: rgba(255 , 255, 255, 0.5);
@@ -96,21 +98,16 @@ h6, .h6 {
 .area-logo{
     height: 100%;
 }
-
 .navbar-brand{
     line-height: 130px;
     width: 100%;
 }
-
-
 .imglogo{
     width: 337px;
 }
-
 .buscador{
     line-height: 130px;
 }
-
 .buscador_txt{
     text-align: center;
     font-size: 1em;
@@ -120,8 +117,6 @@ h6, .h6 {
     border: thin solid white;
     width: 300px;
 }
-
-
 .area-menu{
     margin: 0px;
     padding: 0px;
@@ -129,12 +124,6 @@ h6, .h6 {
     width: 100%;
     background-color: rgba(255 , 255, 255, 0.7);
 }
-
-
-
-
-
-
 /** Menu header **/
 .header-menu {
     margin: 0px;
@@ -171,16 +160,20 @@ h6, .h6 {
     border: thin solid grey;
 }
 
-/*** HOME - FORMULARIO  ***
+/*** HOME - FORMULARIO ***
 ************************/
 
-/*.outer_slidehome{
+.outer_slidehome{
     
     
-}*/
+}
+
 .carruselHome{
+    
     height: 600px;
     border: thin solid blue;
+
+    
 }
 
 .carrusel-post{
@@ -189,9 +182,9 @@ h6, .h6 {
     /*max-height: -webkit-calc(100vh - 300px);
     max-height: -moz-calc(100vh - 300px);
     max-height: calc(100vh - 300px)*/
-}
+  }
 
-.carrusel-imagen {
+  .carrusel-imagen {
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -203,7 +196,9 @@ h6, .h6 {
     /*position relative;
     z-index: -300 !important;
     /*top: -180px;*/
-}
+  }
+
+
     /***HOME - FORMULARIO***
     ************************/
 /*.home-post{
@@ -224,6 +219,7 @@ h6, .h6 {
     height: 37px;
     border-radius: 10px;
 }
+
 .wpcf7-submit.btnhome{
     Color:red;
     text-align: center;
@@ -233,32 +229,26 @@ h6, .h6 {
     /*******HOME - EDUCA******
     **************************/
 .contenedor-educa{
-    background-image:url("../theme_web_consentidog/img/ConsentiDog-Obediencia.jpg");
+    background-image:url("../theme_web_consentidog/img/bg_home_obediencia.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: 750px;
 }
-
 .titulo-educadog{
     text-align: center;
     font-size: 1.5em;
-    margin-bottom:30px;
-    padding: 40px 0px 0px 0px;
+    padding: 20px;
     color:#E5E5E5;
 }
 .titulo_educa {
+    text-decoration: none;
     font-size: 1.2em;
     font-family: 'Simply Criket Demibold';
     color: #201716;
     margin-bottom: 10px;
     border-bottom: thin solid #201716;
 }
-.titulo_educa:hover{
-    font-size: 1.3em;
-    color: #201716;
-}
 .link_educa{
-    /*display: inline-block;*/
     float: left;
     background-color: rgba(255 , 255, 255, 0.7);
     padding-top: 40px;
@@ -272,28 +262,15 @@ h6, .h6 {
     padding: 50px 50px 0px 50px;
 }
 .btneduca{
-    margin: 100px;
+    margin: 60px;
     color: rgb(0, 0, 0);
-    background-color: rgb(196, 195, 195);
-    width: 60%;
-    height: 45px;
-    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
-    line-height: 1.5em;
-    border-radius: 1rem;
-    border: thin solid white;
+    background-color: #ffffff;
+    border-radius: 15px;
+    font-size: 1.2em;
+    height: 40px;
+    width: 150px;
 }
-.btneduca:hover{
-    margin: 100px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(196, 195, 195);
-    width: 62%;
-    height: 45px;
-    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
-    line-height: 1.5em;
-    border-radius: 1rem;
-    border: thin solid white;
-}
-    /*******HOME - SERVICIOS******
+    /*******HOME - SERVICIOS*********∫*
     ******************************/
 .link_servicios{
     /*display: inline-block;*/
