@@ -16,8 +16,16 @@
 
 <body <?php body_class(); ?>> 
 <div class="container-fluid p-sm-0 m-sm-0">
-    
-    <div class="header p-0 m-0">
+    <?php
+        $classaddhome = "";
+        /*if ( is_front_page() ) {
+            // This is the blog posts index
+            require_once(Consentidog_TEMP_PARTS . '/home.php');
+            $classaddhome = "header_home";
+        }*/
+        
+    ?>
+    <div class="header <?=$classaddhome; ?> p-0 m-0 bg-transparent">
         <div class="subheader row p-0 m-0">
             <!--Area logo-->
             <div class="area-logo col-sm-5 p-0 m-0" >
@@ -53,4 +61,4 @@
         </div>
     </div><!-- header --> 
 
-    <div class="row cont-central p-0 m-0">
+    <!--div class="row cont-central p-0 m-0"-->
