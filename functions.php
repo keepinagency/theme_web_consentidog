@@ -26,9 +26,9 @@ function consentidog_wp_setup() {
 function consentidog_thumbnails() {
     add_theme_support( 'post-thumbnails' );
     
-    /*add_image_size( 'mini', 395, 200, TRUE ); // Miniaturas para PAGE_Blog*/
     add_image_size( 'medium', 400, 400, TRUE ); // Miniaturas por definir/si es necesario
     add_image_size( 'page', 450, 1000, TRUE);    // Miniatura Obediencia Home
+    add_image_size( 'mini', 600, 400, TRUE ); // Miniaturas para PAGE_Blog*/
     add_image_size( 'full', 1200, 1024, TRUE ); // Miniaturas /si es necesario
   }
 
