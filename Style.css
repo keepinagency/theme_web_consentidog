@@ -288,13 +288,13 @@ h6, .h6 {
     width: 50%;
     border: thin solid rgb(0, 0, 0);
 }
-/*.titulo_servicios {
+.titulo_servicios {
     background: #ff4500;
 }
 .miniatura_servicios{
     border: thin solid #333;
     height: 450px;
-}*/
+}
     /*******HOME - BLOG*******
     **************************/
 .link_blog{
