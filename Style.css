@@ -43,26 +43,6 @@ h6, .h6 {
     font-weight: normal;
     color: #333;
 }
-/***  Override Bootstrap's default container ***
-*********************************************/
-/*@media (min-width: 1200px) {
-    .container {
-      padding: 0px;
-      margin: 0px;
-      width: 100%;
-      background-color: fuchsia;
-      /*border: thin solid #B0B;
-      background-image: url('http://127.0.0.1:8080/ConsentiDog/wp-content/uploads/2019/07/Dog-1200x800.jpg'); 
-      background-size: cover;
-      background-repeat: none;
-      opacity: 0.5;****/
- /*   }
-    .row{
-      padding: 0px;
-      margin: 0px;
-      background-color: lightseagreen;
-    }
-}*/
 
 /*** HEADER ***
 *************/
@@ -150,10 +130,7 @@ h6, .h6 {
     margin: 0px;
     border: thin solid grey;
 }
-/*.outer_slidehome{
-    
-    
-}*/
+
 .carruselHome{
     height: 600px;
     border: thin solid blue;
@@ -170,13 +147,6 @@ h6, .h6 {
     background-position: bottom;
     width: 100%;
     height: 100%;
-    /*max-height: 400px;
-    min-height: -webkit-calc(100vh - 300px);
-    min-height: -moz-calc(100vh - 300px);
-    min-height: calc(100vh - 300px);*/
-    /*position relative;
-    z-index: -300 !important;
-    /*top: -180px;*/
 }
     /***HOME - FORMULARIO***
     ************************/
@@ -305,21 +275,29 @@ h6, .h6 {
 }
 .link_servicios:hover {
     background-color: #FE330A;
-    opacity: 0.6;
+    opacity: 0.7;
 }
     /*******HOME - BLOG*******
     **************************/
+.contenedor-blogHome{
+    background-color: #E5E5E5;
+}
 .link_blog{
-    /*display: inline-block;*/
     float: left;
     text-align: center;
     width: 33%;
     padding: 5px;
+    background-color: #E5E5E5;
+}
+.titulo_blog{
+    padding-top: 20px;
+    border: thins solid #201716
 }
 .custom-tituloblog{
     text-align: center;
-    font-size: 26px;
+    font-size: 1.5em;
     color: #FE330A;
+    line-height: 4em;
 }
     /*******HOME - FOOTER*******
     **************************/
