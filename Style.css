@@ -273,11 +273,12 @@ h6, .h6 {
     font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     padding: 10px 0px 10px 20px;
     opacity: 0.3;
+    line-height: 1.1em;
 }
 .citaautor{
     font-size: 18px;
     float: right;
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
     /*******HOME - SERVICIOS******
     ******************************/
@@ -297,13 +298,6 @@ h6, .h6 {
     font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     font-size: 1em;
 }
-.titulo_servicios a:hover{
-    background-color: #FE330A;
-}
-.link_servicios a:hover{
-    background-color: #FE330A !important;
-}
-
     /*******HOME - BLOG*******
     **************************/
 .link_blog{

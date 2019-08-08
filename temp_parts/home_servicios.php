@@ -10,7 +10,6 @@ $nuevo_arreglo = new WP_Query(array(
 
 <div class="contenedor-servicioshome">
     <?php if ($nuevo_arreglo->have_posts()) :?>
-        <div><h1>Servicios</h1></div>
         <div class="listas_servicios">
         <?php
         while ($nuevo_arreglo->have_posts()) :
