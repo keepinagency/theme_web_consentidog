@@ -286,15 +286,24 @@ h6, .h6 {
     text-align: center;
     float: left;
     width: 50%;
-    border: thin solid rgb(0, 0, 0);
 }
 .titulo_servicios {
-    background: #ff4500;
+    background: #E5E5E5;
+    text-align: left;
+    padding: 5px 0px 5px 15px;
 }
-.miniatura_servicios{
-    border: thin solid #333;
-    height: 450px;
+.titulo_servicios a:link{
+    color: #FE330A;
+    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
+    font-size: 1em;
 }
+.titulo_servicios a:hover{
+    background-color: #FE330A;
+}
+.link_servicios a:hover{
+    background-color: #FE330A !important;
+}
+
     /*******HOME - BLOG*******
     **************************/
 .link_blog{
