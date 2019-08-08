@@ -16,11 +16,9 @@ $nuevo_arreglo = new WP_Query(array(
             while ($nuevo_arreglo->have_posts()) :
                 $nuevo_arreglo->the_post();?>
                     <div class="link_educa col-md-4 text-center">
-                        <a class="titulo_educa" style="text-decoration:none"; href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            <div class="extracto-educa"><?php the_content();?></div>
-                        <a href="<?php the_permalink(); ?>">
-                            <input class="btneduca text-center" type="submit" name="solicitar" value ="MÁS INFO">
-                        </a>
+                        <a class="titulo_educa" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                        <div class="extracto-educa"><?php the_content();?></div>
+                        <input class="btneduca" type="submit" name="solicitar" value ="MÁS INFO">
                     </div>
             <?php endwhile;?>
 		</div>
