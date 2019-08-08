@@ -229,6 +229,7 @@ h6, .h6 {
 .titulo_educa:hover{
     font-size: 1.3em;
     color: #201716;
+    text-decoration: none;
 }
 .link_educa{
     float: left;
@@ -283,13 +284,12 @@ h6, .h6 {
     /*******HOME - SERVICIOS******
     ******************************/
 .link_servicios{
-    /*display: inline-block;*/
-    text-align: center;
+    background: #E5E5E5;
     float: left;
     width: 50%;
+    border: 1px solid #FE330A;
 }
 .titulo_servicios {
-    background: #E5E5E5;
     text-align: left;
     padding: 5px 0px 5px 15px;
 }
@@ -298,6 +298,15 @@ h6, .h6 {
     font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     font-size: 1em;
 }
+.titulo_servicios a:hover{
+    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    text-decoration: none;
+}
+.link_servicios:hover {
+    background-color: #FE330A;
+    opacity: 0.6;
+}
     /*******HOME - BLOG*******
     **************************/
 .link_blog{
@@ -305,7 +314,15 @@ h6, .h6 {
     float: left;
     text-align: center;
     width: 33%;
+    padding: 5px;
 }
+.custom-tituloblog{
+    text-align: center;
+    font-size: 26px;
+    color: #FE330A;
+}
+    /*******HOME - FOOTER*******
+    **************************/
 .iconcontacto{
     margin-left: 100px !important;
     margin-top: -18px !important;

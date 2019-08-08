@@ -15,7 +15,6 @@ $arregloservicios = new WP_Query(array(
 <?php
 if ($arregloservicios->have_posts()) :?>
     <div class="contenedor-servicios">
-        <div class="custom-titulo"><?php echo get_post_meta($post->ID, 'titulo', true);?></div>
         <!--div class="listas-servicios"-->
             <?php while ($arregloservicios->have_posts()) :
                 $arregloservicios->the_post();?>
