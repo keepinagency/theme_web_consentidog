@@ -280,25 +280,27 @@ h6, .h6 {
     /*******HOME - BLOG*******
     **************************/
 .contenedor-blogHome{
-    background-color: #E5E5E5;
+    background-color: white;
+    width: 100%;
+}
+.listas_blogHome{
+    width: 100% !important;
 }
 .link_blog{
     float: left;
     text-align: center;
     width: 33%;
     padding: 5px;
-    background-color: #E5E5E5;
-}
-.titulo_blog{
-    padding-top: 20px;
-    border: thins solid #201716
+    background-color:white;
 }
 .custom-tituloblog{
     text-align: center;
     font-size: 1.5em;
     color: #FE330A;
     line-height: 4em;
+    background-color:white;
 }
+
     /*******HOME - FOOTER*******
     **************************/
 .iconcontacto{
