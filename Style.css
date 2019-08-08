@@ -17,9 +17,6 @@ WordPress Available:  yes
     font-weight: normal;
     font-style: normal;
   }
-
-
-
 /*html {
     min-height: 100%;
     height: 100%;
@@ -35,8 +32,6 @@ body {
     font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     font-weight: normal;
 }
-
-
 h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -48,9 +43,6 @@ h6, .h6 {
     font-weight: normal;
     color: #333;
 }
-
-
-
 /***  Override Bootstrap's default container ***
 *********************************************/
 /*@media (min-width: 1200px) {
@@ -82,9 +74,7 @@ h6, .h6 {
     width: 100%;
     top: 0px;
     z-index: 100000 !important;
-    
 }
-
 .header_home{
     z-index: 100000 !important;
     position: relative;
@@ -92,7 +82,6 @@ h6, .h6 {
     opacity: 0.3;
     filter: alpha(opacity=30); 
 }
-
 .subheader {
     height: 147px;
     background-color: rgba(255 , 255, 255, 0.5);
@@ -100,21 +89,16 @@ h6, .h6 {
 .area-logo{
     height: 100%;
 }
-
 .navbar-brand{
     line-height: 130px;
     width: 100%;
 }
-
-
 .imglogo{
     width: 337px;
 }
-
 .buscador{
     line-height: 130px;
 }
-
 .buscador_txt{
     text-align: center;
     font-size: 1em;
@@ -124,8 +108,6 @@ h6, .h6 {
     border: thin solid white;
     width: 300px;
 }
-
-
 .area-menu{
     margin: 0px;
     padding: 0px;
@@ -133,12 +115,6 @@ h6, .h6 {
     width: 100%;
     background-color: rgba(255 , 255, 255, 0.7);
 }
-
-
-
-
-
-
 /** Menu header **/
 .header-menu {
     margin: 0px;
@@ -174,32 +150,22 @@ h6, .h6 {
     margin: 0px;
     border: thin solid grey;
 }
-
-/*** HOME - FORMULARIO  ***
-************************/
-
 /*.outer_slidehome{
     
     
 }*/
-
 .carruselHome{
-    
     height: 600px;
     border: thin solid blue;
-
-    
 }
-
 .carrusel-post{
     /*max-height: calc(100vh - 300px);*/
     height: 680px;
     /*max-height: -webkit-calc(100vh - 300px);
     max-height: -moz-calc(100vh - 300px);
     max-height: calc(100vh - 300px)*/
-  }
-
-  .carrusel-imagen {
+}
+.carrusel-imagen {
     background-size: cover;
     background-position: bottom;
     width: 100%;
@@ -211,9 +177,7 @@ h6, .h6 {
     /*position relative;
     z-index: -300 !important;
     /*top: -180px;*/
-  }
-
-
+}
     /***HOME - FORMULARIO***
     ************************/
 /*.home-post{
@@ -234,7 +198,6 @@ h6, .h6 {
     height: 37px;
     border-radius: 10px;
 }
-
 .wpcf7-submit.btnhome{
     Color:red;
     text-align: center;
@@ -249,28 +212,88 @@ h6, .h6 {
     background-size: cover;
     height: 700px;
 }
-
 .titulo-educadog{
     text-align: center;
-    font-size: 25px;
-    padding: 20px;
+    font-size: 1.5em;
+    margin-bottom:10px;
+    padding: 20px 0px 0px 0px;
+    color:#E5E5E5;
 }
-.titulo_educa{
-    font-size: 30px;
+.titulo_educa {
+    font-size: 1.2em;
+    font-family: 'Simply Criket Demibold';
+    color: #201716;
+    margin-bottom: 10px;
+    border-bottom: thin solid #201716;
+}
+.titulo_educa:hover{
+    font-size: 1.3em;
+    color: #201716;
 }
 .link_educa{
-    /*display: inline-block;*/
     float: left;
-    text-align: center;
-    width: 33%;
+    background-color: rgba(255 , 255, 255, 0.7);
+    padding-top: 40px;
+    margin: 6px;
+    margin-left: 10px;
+    width: 32%;
+    height: 600px;    
 }
-    /*******HOME - SERVICIOS******&&&&&*
+.extracto-educa{
+    font-size: 1em;
+    padding: 50px 50px 0px 50px;
+}
+.btneduca{
+    margin: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(196, 195, 195);
+    width: 60%;
+    height: 45px;
+    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    border-radius: 1rem;
+}
+.btneduca:hover{
+    margin: 100px;
+    color: #fff;
+    background-color: rgb(196, 195, 195);
+    width: 260px;
+    height: 45px;
+    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
+    line-height: 1.5em;
+    border-radius: 1rem;
+}
+    /*******HOME - CITA*******
+    **************************/
+.contenedor-cita{
+    background-color: white;
+}
+.citahome{
+    font-size: 4.9em;
+    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
+    padding: 10px 0px 10px 20px;
+    opacity: 0.3;
+}
+.citaautor{
+    font-size: 18px;
+    float: right;
+    margin-top: 30px;
+}
+    /*******HOME - SERVICIOS******
     ******************************/
 .link_servicios{
     /*display: inline-block;*/
     text-align: center;
     float: left;
     width: 50%;
+    border: thin solid rgb(0, 0, 0);
+}
+.titulo_servicios {
+    background: #ff4500;
+}
+.miniatura_servicios{
+    border: thin solid #333;
+    height: 450px;
 }
     /*******HOME - BLOG*******
     **************************/
@@ -283,20 +306,6 @@ h6, .h6 {
 .iconcontacto{
     margin-left: 100px !important;
     margin-top: -18px !important;
-}
-    /*******HOME - CITA*******
-    **************************/
-.contenedor-cita{
-    display: inline-flex;
-}
-.citahome{
-    font-size: 50px;
-    width: 70%;
-}
-.citaautor{
-    font-size: 20px;
-    font-style: italic;
-    width: 30%;
 }
         /**********************************************************
         ************CONTENEDOR GENERAL PARA PAGES - DEFAULT*********/
