@@ -28,6 +28,7 @@ body {
     /*font-family: 'Cricket', arial;*/
     font-size: 14pt;
     color: #201716;
+    /*background-color: white;*/
     background-color: #D1D1D1;
     font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     font-weight: normal;
@@ -303,9 +304,14 @@ h6, .h6 {
 
     /*******HOME - FOOTER*******
     **************************/
-.iconcontacto{
-    margin-left: 100px !important;
-    margin-top: -18px !important;
+.contenedor-footer{
+    background: #fff;
+}
+.contenido-footer{
+    text-align: center;
+    padding: 50px;
+    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif; 
+    font-size: 1em;
 }
         /**********************************************************
         ************CONTENEDOR GENERAL PARA PAGES - DEFAULT*********/

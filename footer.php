@@ -1,5 +1,5 @@
 <?php
-	 $url_fb = get_option( 'faceurl', 'http://www.facebook.com' );
+	/* $url_fb = get_option( 'faceurl', 'http://www.facebook.com' );
 	 $url_in = get_option( 'instaurl', 'http://www.instagram.com' );
 	 $icono_fb = get_option( 'facelogo', '/img/icoface.png' );
 	 $icono_in = get_option( 'instalogo', '/img/icoinsta.png' );
@@ -7,13 +7,24 @@
 	 $text_ct = get_option( 'mailtexto', 'loren@ipsum.com' );
 	 $text_ph = get_option( 'phonenumber', '(9999)999.99.99' );
 	 $icono_ct = get_option( 'contactologo', '/img/contactomail.png' );
-	 $icono_ph = get_option( 'phoneicono', '/img/contactophone.png' );
+	 $icono_ph = get_option( 'phoneicono', '/img/contactophone.png' );*/
 ?>
 
 </div><!-- /.container -->
 <footer class="footer">
-	<div class="menufoot col-sm-8">
-			<?php if (!empty($icono_ct) || !empty($icono_in)) {
+	<div class="contenedor-footer">
+		<div class="contenido-footer">Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elit. Duis ut blandit diam, a cursus sapien. 
+			Nam volutpat mauris quis dignissim viverra. 
+			Curabitur ultricies vitae ipsum id dictum. 
+			Quisque neque ipsum, suscipit eu odio eget, mollis posuere odio. 
+			Nulla elementum dictum feugiat. 
+			Praesent suscipit, tellus a vehicula mattis, lacus dolor egestas diam, 
+			iaculis volutpat dolor massa at turpis. 
+		</div>
+	</div>
+	<!--div class="menufoot col-sm-8">
+			<?php /*if (!empty($icono_ct) || !empty($icono_in)) {
 				echo "Contactános:&nbsp;&nbsp"; }
 			?>
 		<div class="iconcontacto">
@@ -42,8 +53,8 @@
 			<a href="<?php echo $url_in; ?>" class="icon-fb" target="_blank">
 			<img src="<?php echo $icono_in; ?>" alt="" id="">
 		</a>
-		<?php } ?>
-	</div>
+		<?php } */?>
+	</div-->
 </footer>
 <?php wp_footer(); ?>
 </body>
