@@ -14,18 +14,18 @@ $nuevo_arreglo = new WP_Query(array(
             <?php
             while ($nuevo_arreglo->have_posts()) :
                 $nuevo_arreglo->the_post();?>
-                    <div class="link_servicios">
-                        <a href="<?php the_permalink();?>">
-                            <div class="titulo_servicios text-left">
+                    <a href="<?php the_permalink();?>">
+                        <div class="link_servicios color found">
+                            <div class="titulo_servicios text-uppercase text-left">
                                 <?php the_title();?>
                             </div>
                             <div class="miniatura_servicios"
                                 style="background-image: url('<?php echo the_post_thumbnail_url('');?>'); 
-                                        height:400px;
+                                        height:350px;
                                         background-size: cover;"> &nbsp;
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>  
             <?php endwhile;?>
 		</div>
     <?php endif;?>

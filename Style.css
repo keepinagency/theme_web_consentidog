@@ -208,7 +208,7 @@ h6, .h6 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 600px;
+    height: 800px;
 }
 .titulo-educadog{
     font-weight: 500 !important;
@@ -225,8 +225,8 @@ h6, .h6 {
     background-color: rgba(255 , 255, 255, 0.7);
 }
 .extracto-educa{
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 20%;
+    margin-right: 20%;
     border-top: solid thin black;
     height: 60%;
     font-weight: 600 !important;
@@ -260,8 +260,26 @@ h6, .h6 {
 }
     /*******HOME - SERVICIOS******
     ******************************/
+.color {
+    position: relative;
+}
+.color:after {
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+}
+.color:hover:after {
+    opacity: .6;
+}
+.found:after {
+    background-color: #FE330A;
+}
 .link_servicios{
-    background: #E5E5E5;
+    background: white;
     float: left;
     width: 50%;
     border: 1px solid #FE330A;
@@ -269,27 +287,17 @@ h6, .h6 {
 .titulo_servicios {
     text-align: left;
     padding: 5px 0px 5px 15px;
-}
-.titulo_servicios a:link{
-    color: #FE330A;
-    font-size: 1em;
-}
-.titulo_servicios a:hover{
-    font-size: 1em;
-    text-decoration: none;
+    color: rgb(58, 14, 14);
 }
 .link_servicios:hover {
     background-color: #FE330A;
-   opacity: 0.7;
+    opacity: 0.7;
 }
     /*******HOME - BLOG*******
     **************************/
 .contenedor-blogHome{
     background-color: white;
     width: 100%;
-}
-.listas_blogHome{
-    width: 100% !important;
 }
 .link_blog{
     float: left;
@@ -299,11 +307,12 @@ h6, .h6 {
     background-color:white;
 }
 .custom-tituloblog{
-    text-align: center;
     font-size: 1.5em;
     color: #FE330A;
-    line-height: 4em;
     background-color:white;
+}
+.enlace-blog {
+    background: rgba(0, 0, 0, 0.4);
 }
 
     /*******HOME - FOOTER*******
