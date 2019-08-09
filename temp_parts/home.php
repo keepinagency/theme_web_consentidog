@@ -1,7 +1,5 @@
 <?php 
 
-//$img_destacada_url = get_the_post_thumbnail_url();
-
 $posts_slides = new WP_Query(array (
     'post_type'     =>'post',
     'category_name' =>'fotoshome',
@@ -22,16 +20,38 @@ $i=1;
 					$posts_slides->the_post();?>
 					<div class="carousel-item carrusel-imagen p-0 m-0 <?php if ($i == 1) echo 'active'; ?>" 
 						style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>); "> 
-						&nbsp;
-	
-						<!--img class="d-block w-100" src="<?php //echo get_the_post_thumbnail_url(); ?>"-->
-		
-						
-						<!--div class="carrusel-content carousel-caption col-lg-6 d-none d-sm-block">
-							<h3><?php //the_title();?></h3>
-							<p><?php //echo get_the_content();?></p>
-						</div-->
+						<div class="area-form col-sm-5 p-0 m-0 align-middle" >
+							
+							<div class="bg-form-reserva-home pt-4">
+								<form>
+									<div class="form-group">
+										<label for="fecha-llegada" class="col-12 col-form-label text-center">FECHA DE LLEGADA</label>
+										<div class="col-12">
+											<input class="form-control text-center" 
+													type="datetime-local" 
+													value="2019-08-01T12:00:00" 
+													id="fecha-llegada">
+										</div>
+									</div>
+									<div class="form-group">
+									<label for="fecha-retiro" class="col-12 col-form-label text-center">FECHA DE RETIRO</label>
+										<div class="col-12">
+											<input class="form-control text-center" 
+													type="datetime-local" 
+													value="2019-08-02T12:00:00" 
+													id="fecha-retiro">
+										</div>
+									</div>
+									<div class="col-12 text-center">
+										<button type="submit" class="btn btn-light">RESERVAR</button>
+									</div>
+								</form>
+							</div>
 
+						</div>
+						<div class="area-vacía col-sm-7 p-0 m-0" >
+							&nbsp;
+						</div>
 					</div>
 					<?php 
 					$i++; 
