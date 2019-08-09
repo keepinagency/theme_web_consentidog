@@ -4,7 +4,7 @@ Theme Name: Keepin - ConsentiDog
 Theme URI: https://www.keepin.com.ve/
 Author: Team Keepin
 Author URI: https://www.keepin.com.ve
-Description: Primera versión del tema para la Web de ConsentiDog. Uso exclusivo de ConsentiDog 
+Description: Primera versión del tema para la Web de ConsentiDog. Uso exclusivo de ConsentiDog
 Version: 0.0.1 
 Text Domain: Keepin
 WordPress Available:  yes
@@ -309,7 +309,7 @@ h6, .h6 {
 }
 .contenido-footer{
     text-align: center;
-    padding: 50px;
+    padding: 100px 100px 40px 100px;
     font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif; 
     font-size: 1em;
 }
@@ -339,7 +339,7 @@ h6, .h6 {
 .contenedor-contenido{
     padding: 50px;
     background: rgba(229, 229, 229, 0.7);
-    width: 60%;
+    width: 75%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
