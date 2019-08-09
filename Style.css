@@ -13,36 +13,67 @@ WordPress Available:  yes
 /** Definición de fuentes locales **/
 @font-face {
     font-family: 'Conv_SimplyCriket';
-    src: local('☺'), url('fonts/SimplyCricket-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-/*html {
-    min-height: 100%;
-    height: 100%;
-    width: 100%;
+    src: url('fonts/SimplyCricket-Medium.ttf') format('truetype');
 }
 
-*/
-body {
-    /*font-family: 'Cricket', arial;*/
-    font-size: 14pt;
-    color: #201716;
-    /*background-color: white;*/
-    background-color: #D1D1D1;
+@font-face {
+    font-family: 'Conv_SimplyCriket';
+    src: url('fonts/SimplyCricket-Demibold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Conv_SimplyCriket';
+    src: url('fonts/SimplyCricket-Bold.ttf') format('truetype');
+    font-weight: bolder;
+}
+
+@font-face {
+    font-family: 'Conv_SimplyCriket';
+    src: url('fonts/SimplyCricket-Medium.ttf') format('truetype');
+    font-weight: 100;
+}
+
+
+* {
     font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     font-weight: normal;
 }
+
+body {
+    font-size: 14.5pt;
+    color: #201716;
+    /*background-color: white;*/
+    background-color: #D1D1D1;
+}
+
+h1, .h1{
+    font-size: 2em;
+}
+
+h2, .h2{
+    font-size: 1.7em;
+}
+
+h3, .h3{
+    font-size: 1.5em;
+}
+
+h4, .h4{
+    font-size: 1.2em;
+}
+
+.text-secondary{
+    color:#cccccc !important;
+}
+
 h1, .h1,
 h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 {
-    margin-top: 0;
-    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
-    font-weight: normal;
-    color: #333;
+    font-weight: bold;
 }
 
 /*** HEADER ***
@@ -83,7 +114,6 @@ h6, .h6 {
 .buscador_txt{
     text-align: center;
     font-size: 1em;
-    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     line-height: 1.5em;
     border-radius: 1rem;
     border: thin solid white;
@@ -112,7 +142,6 @@ h6, .h6 {
     margin-left: 30px;
     padding-right: 50px;
     display: inline-block;
-    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     font-size: 0.8em;
 }
@@ -137,11 +166,7 @@ h6, .h6 {
     border: thin solid blue;
 }
 .carrusel-post{
-    /*max-height: calc(100vh - 300px);*/
     height: 680px;
-    /*max-height: -webkit-calc(100vh - 300px);
-    max-height: -moz-calc(100vh - 300px);
-    max-height: calc(100vh - 300px)*/
 }
 .carrusel-imagen {
     background-size: cover;
@@ -149,92 +174,74 @@ h6, .h6 {
     width: 100%;
     height: 100%;
 }
-    /***HOME - FORMULARIO***
-    ************************/
-/*.home-post{
-    background: #333;
-    width:17%;
-    height: 230px;
-    margin-left: 40px;
-    border-radius: 10px;
+
+/*** HOME - FORMULARIO ***
+***********************/
+
+.area-form{
+    height: 100%;
 }
-.contenido-home{
-    text-align: center;
-    margin-top: -50px;
-    margin-left: auto;
-    margin-right: auto;
+
+.bg-form-reserva-home{
+    height: 290px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    border: thin solid grey;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    margin-top: 30px;;
 }
-.wpcf7-date {
-    width: 150px;
-    height: 37px;
-    border-radius: 10px;
+
+
+.btn-light{
+    border: thin solid lightgrey;
+    border-radius: 0.5em;
 }
-.wpcf7-submit.btnhome{
-    Color:red;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}*/
+
+
     /*******HOME - EDUCA******
     **************************/
 .contenedor-educa{
-    background-image:url("../theme_web_consentidog/img/ConsentiDog-Obediencia.jpg");
+    background-image:url("../theme_web_consentidog/img/bg_educa_600px.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    background-position: top;
+    height: 600px;
 }
 .titulo-educadog{
-    text-align: center;
-    font-size: 1.5em;
-    margin-bottom:10px;
-    padding: 20px 0px 0px 0px;
-    color:#E5E5E5;
+    font-weight: 500 !important;
 }
 .titulo_educa {
-    font-size: 1.2em;
-    font-family: 'Simply Criket Demibold';
     color: #201716;
-    margin-bottom: 10px;
-    border-bottom: thin solid #201716;
+    padding-top: 5%;
 }
 .titulo_educa:hover{
-    font-size: 1.3em;
     color: #201716;
-    text-decoration: none;
+    font-weight: bolder;
 }
 .link_educa{
-    float: left;
     background-color: rgba(255 , 255, 255, 0.7);
-    padding-top: 40px;
-    margin: 6px;
-    margin-left: 10px;
-    width: 32%;
-    height: 600px;    
 }
 .extracto-educa{
-    font-size: 1em;
-    padding: 50px 50px 0px 50px;
+    margin-left: 25%;
+    margin-right: 25%;
+    border-top: solid thin black;
+    height: 60%;
+    font-weight: 600 !important;
 }
-.btneduca{
-    margin: 100px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(196, 195, 195);
-    width: 60%;
-    height: 45px;
-    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
-    line-height: 1.5em;
-    border-radius: 1rem;
+.extracto-educa p{
+    font-weight: bold !important;
 }
-.btneduca:hover{
-    margin: 100px;
-    color: #fff;
-    background-color: rgb(196, 195, 195);
-    width: 260px;
-    height: 45px;
-    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
-    line-height: 1.5em;
-    border-radius: 1rem;
+.area-btn-educa{
+    height: 15%;
 }
+.btn-masinfo{
+    width: 40%;
+    font-weight: light !important;
+}
+
     /*******HOME - CITA*******
     **************************/
 .contenedor-cita{
@@ -242,7 +249,6 @@ h6, .h6 {
 }
 .citahome{
     font-size: 4.9em;
-    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     padding: 10px 0px 10px 20px;
     opacity: 0.3;
     line-height: 1.1em;
@@ -266,17 +272,15 @@ h6, .h6 {
 }
 .titulo_servicios a:link{
     color: #FE330A;
-    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     font-size: 1em;
 }
 .titulo_servicios a:hover{
-    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
     font-size: 1em;
     text-decoration: none;
 }
 .link_servicios:hover {
     background-color: #FE330A;
-    opacity: 0.7;
+   opacity: 0.7;
 }
     /*******HOME - BLOG*******
     **************************/
