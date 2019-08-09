@@ -119,39 +119,50 @@ h6, .h6 {
     border: thin solid white;
     width: 300px;
 }
+
+/** Menu header **/
 .area-menu{
     margin: 0px;
     padding: 0px;
-    height: 33px;
+    height: 38px;
     width: 100%;
     background-color: rgba(255 , 255, 255, 0.7);
 }
-/** Menu header **/
 .header-menu {
     margin: 0px;
     padding: 0px;
     top: 0px;
     width: 100%;
-    height: 38px;
     text-align: center;
     position: absolute;
-    background-color: rgba(229, 229, 229, 0,3);
-    /*border: thin solid red;*/
 }
 .header-menu li{
-    margin-left: 30px;
-    padding-right: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
     display: inline-block;
     text-transform: uppercase;
     font-size: 0.8em;
+    background-image: url("../theme_web_consentidog/img/lineadiv_menu.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .header-menu a{
     text-decoration: none;
     color: #201716;
+    
 }
 .header-menu a:hover{
-    color:#696766;
+    color:#FE330A;
+
 }
+.buscador_txt{
+    background-image: url("../theme_web_consentidog/img/lupa.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 /*** Contenedor de contenido central BODY ***
 ******************************************/
