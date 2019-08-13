@@ -15,14 +15,17 @@ $nuevo_arreglo = new WP_Query(array(
             while ($nuevo_arreglo->have_posts()) :
                 $nuevo_arreglo->the_post();?>
                     <a href="<?php the_permalink();?>">
-                        <div class="link_servicios color found">
+                        <div class="link_servicios color22 found22">
                             <div class="titulo_servicios text-uppercase text-left">
                                 <?php the_title();?>
                             </div>
                             <div class="miniatura_servicios"
                                 style="background-image: url('<?php echo the_post_thumbnail_url('');?>'); 
                                         height:350px;
-                                        background-size: cover;"> &nbsp;
+                                        background-size: cover;"
+                                onMouseOver="this.style.backgroundColor='#FE330A';
+                                             this.style.backgroundBlendMode='multiply'"
+                                onMouseOut="this.style.backgroundColor=''"> &nbsp;
                             </div>
                         </div>
                     </a>  

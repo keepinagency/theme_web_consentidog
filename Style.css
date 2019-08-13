@@ -269,26 +269,11 @@ h6, .h6 {
     float: right;
     margin-bottom: 30px;
 }
-    /*******HOME - SERVICIOS******
-    ******************************/
-.color {
-    position: relative;
-}
-.color:after {
-    position: absolute;
-    content:"";
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    opacity:0;
-}
-.color:hover:after {
-    opacity: .6;
-}
-.found:after {
-    background-color: #FE330A;
-}
+    
+
+/******* HOME - SERVICIOS ******
+********************************/
+
 .link_servicios{
     background: white;
     float: left;
@@ -300,10 +285,7 @@ h6, .h6 {
     padding: 5px 0px 5px 15px;
     color: rgb(58, 14, 14);
 }
-.link_servicios:hover {
-    background-color: #FE330A;
-    opacity: 0.7;
-}
+
     /*******HOME - BLOG*******
     **************************/
 .contenedor-blogHome{
