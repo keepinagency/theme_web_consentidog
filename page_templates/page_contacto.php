@@ -11,7 +11,7 @@ $ima = get_the_post_thumbnail();
     <?php if (have_posts()) :?>
         <div class="row p-0 m-0">
             <div class="col-12 h-25 text-center m-0 p-0  ">
-                <h2 class="text-uppercase text-dark h-100 titulo-educadog
+                <h2 class="text-uppercase text-dark h-100 titulo-contactanos
                             d-flex align-items-center justify-content-center">
                             <?php the_title(); ?>
                 <h2>
@@ -21,8 +21,8 @@ $ima = get_the_post_thumbnail();
                     while (have_posts()) : the_post();?>
                             
                     <div class="col-12 h-100">
-                            <div class="m-2 h-75">
-                                <div class="contenedor-contenido w-75 d-flex align-items-center justify-content-center" >
+                            <div class="m-2 h-75 d-flex align-items-center justify-content-center">
+                                <div class="contenedor-contenido w-75 " >
                                     <?php the_content();?>
                                 </div>
 
