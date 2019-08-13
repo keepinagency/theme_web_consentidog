@@ -305,8 +305,9 @@ h6, .h6 {
     color: #FE330A;
     background-color:white;
 }
-.enlace-blog {
-    background: rgba(0, 0, 0, 0.4);
+.titulo-blog {
+    background: rgba(0, 0, 0, 0.65) !important;
+    /*height: 100px;*/
 }
 
     /*******HOME - FOOTER*******
@@ -376,6 +377,7 @@ h6, .h6 {
     border: thin solid black;
     text-align: center;
     margin: 10px;
+    
 }
 .titulo-entradablog{
     font-size: 18px;
