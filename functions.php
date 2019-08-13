@@ -55,10 +55,9 @@ function consentidog_register_menu() {
 /**Buscador en Header**/
 function busquedaform( $form ) {
     $form = '
-    <form class="align-middle" role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-        <div>
-            <label class="screen-reader-text" for="s">' . __('') . '</label>
-            <input type="text" placeholder="BÚSQUEDA" class="buscador_txt" value="' . get_search_query() . '" name="s" id="s" />
+    <form class="w-100" role="search" method="get" id="searchform" action="' . home_url( '/' ) . '">
+        <div class="w-100 d-flex justify-content-center">
+            <input type="text" placeholder="BÚSQUEDA" class="buscador_txt w-50" value="' . get_search_query() . '" name="s" id="s" />
             <!--input type="submit" class="" id="searchsubmit" value="'. esc_attr__('Buscar') .'" /-->
         </div>
     </form>';

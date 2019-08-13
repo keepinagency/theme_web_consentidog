@@ -76,6 +76,23 @@ h6, .h6 {
     font-weight: bold;
 }
 
+::-webkit-input-placeholder { /* Edge */
+    color: #b0b0b0;
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #b0b0b0;
+}
+  
+::placeholder {
+    color: #b0b0b0;
+}
+
+input:focus { 
+    outline: none;
+  }
+
+
 /*** HEADER ***
 *************/
 .header{
@@ -108,16 +125,14 @@ h6, .h6 {
 .imglogo{
     width: 337px;
 }
-.buscador{
-    line-height: 130px;
-}
+
 .buscador_txt{
     text-align: center;
-    font-size: 1em;
+    font-size: 0.8em;
     line-height: 1.5em;
     border-radius: 1rem;
     border: thin solid white;
-    width: 300px;
+    padding-top:5px;
 }
 
 /** Menu header **/

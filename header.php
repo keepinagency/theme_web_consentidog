@@ -42,8 +42,9 @@
             <div class="col-sm-2">
                 &nbsp;
             </div>
-            <div class="area-buscador text-center col-sm-5">
-                <div class="buscador">
+            <div class="area-buscador col-sm-5 p-0 m-0
+                        d-flex align-items-center">
+                <div class="buscador w-100">
                     <?php echo do_shortcode("[wpbsearch]"); ?>
                 </div>
             </div>
