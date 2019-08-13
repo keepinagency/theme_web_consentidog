@@ -17,15 +17,14 @@ $nuevo_arreglo = new WP_Query(array(
             <?php
             while ($nuevo_arreglo->have_posts()) :
                 $nuevo_arreglo->the_post();?>
-                    <div class="link_blog col-md-4">  
-                        <div class="miniatura_blog"
+                    <div class="link_blog col-md-4" >  
+                        <div class="miniatura_blog d-flex align-items-end  p-0 m-0"
                                 style="background-image: url('<?php echo the_post_thumbnail_url('');?>'); 
-                                height:400px;
-                                background-size: cover;"> 
-                                    <a class="titulo_blog align-content-end" href="<?php the_permalink(); ?>">      
-                                        <h4 class="enlace-blog text-uppercase h-50 
-                                                    d-flex align-items-center 
-                                                    justify-content-center text-white ">
+                                    height:400px;
+                                    background-size: cover;"> 
+                                    <a class="titulo-blog w-100 h-50 
+                                              d-flex align-items-center text-center" href="<?php the_permalink(); ?>" >      
+                                        <h4 class="enlace-blog text-uppercase text-center text-white w-100">
                                             <?php the_title(); ?>
                                         </h4>
                                     </a>

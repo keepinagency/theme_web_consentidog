@@ -42,8 +42,9 @@ function consentidog_enqueue_styles() {
 function consentidog_enqueue_scripts() {
     /*** Archivos JS BootStrap y sus dependencias ***/
     $dependencies = array('jquery');
-    wp_enqueue_script('bootstrap', get_template_directory_uri().'/bootstrap/js/bootstrap.min.js', $dependencies, '', true );
-
+    wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', $dependencies, '', true );
+    wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', $dependencies, '', true );
+    wp_enqueue_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', $dependencies, '', true );
 }
 /*** Registro de áreas para menús de WP ***/
 function consentidog_register_menu() {
@@ -54,10 +55,9 @@ function consentidog_register_menu() {
 /**Buscador en Header**/
 function busquedaform( $form ) {
     $form = '
-    <form class="align-middle" role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
-        <div>
-            <label class="screen-reader-text" for="s">' . __('') . '</label>
-            <input type="text" placeholder="BÚSQUEDA" class="buscador_txt" value="' . get_search_query() . '" name="s" id="s" />
+    <form class="w-100" role="search" method="get" id="searchform" action="' . home_url( '/' ) . '">
+        <div class="w-100 d-flex justify-content-center">
+            <input type="text" placeholder="BÚSQUEDA" class="buscador_txt w-50" value="' . get_search_query() . '" name="s" id="s" />
             <!--input type="submit" class="" id="searchsubmit" value="'. esc_attr__('Buscar') .'" /-->
         </div>
     </form>';
