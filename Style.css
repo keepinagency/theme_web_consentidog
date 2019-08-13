@@ -325,6 +325,9 @@ h6, .h6 {
 .enlace-blog {
     background: rgba(0, 0, 0, 0.4);
 }
+.titulo_blog{
+    text-decoration: none !important;
+}
 
     /*******HOME - FOOTER*******
     **************************/
@@ -340,12 +343,12 @@ h6, .h6 {
         /**********************************************************
         ************CONTENEDOR GENERAL PARA PAGES - DEFAULT*********/
         /*IMAGEN*/
-.imagen-pages{
+/*.imagen-pages{
     background-image: url("../theme_web_consentidog/img/ConsentiDog-QuienesSomos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 600px;
-}
+    height: 1200px;
+}*/
         /*Título*/
 .titulo-pages{
     color: #E5E5E5;
@@ -361,13 +364,17 @@ h6, .h6 {
 }
 /*Contenido*/
 .contenedor-contenido{
-    padding: 50px;
+    margin-top: 100px;
+    padding: 80px;
     background: rgba(229, 229, 229, 0.7);
-    width: 75%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-
+    height: 600px;
+}
+.titulo-educadog{
+    margin-top: 100px;
+    padding: 80px;
+    color: #fff;
 }
         /*********** BLOG ***********
         ****************************/

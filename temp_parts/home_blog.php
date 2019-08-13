@@ -22,10 +22,10 @@ $nuevo_arreglo = new WP_Query(array(
                                 style="background-image: url('<?php echo the_post_thumbnail_url('');?>'); 
                                 height:400px;
                                 background-size: cover;"> 
-                                    <a class="titulo_blog" href="<?php the_permalink(); ?>">      
-                                        <h4 class="enlace-blog col align-self-end text-uppercase h-50 
+                                    <a class="titulo_blog align-content-end" href="<?php the_permalink(); ?>">      
+                                        <h4 class="enlace-blog text-uppercase h-50 
                                                     d-flex align-items-center 
-                                                    justify-content-center text-white">
+                                                    justify-content-center text-white ">
                                             <?php the_title(); ?>
                                         </h4>
                                     </a>
