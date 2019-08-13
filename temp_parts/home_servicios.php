@@ -13,10 +13,16 @@ $nuevo_arreglo = new WP_Query(array(
         <div class="listas_servicios">
             <?php
             $i=0;
+            $claserev ="";
             while ($nuevo_arreglo->have_posts()) :
                 $nuevo_arreglo->the_post();?>
                     <a href="<?php the_permalink();?>">
-                        <div class="link_servicios color22 found22">
+                        <?php
+                        if ($i>=2){
+                            $claserev = "d-flex flex-column-reverse"; 
+                        }
+                        ?>
+                        <div class="link_servicios <?= $claserev;?>" >
                             <div id="titserv_<?= $i;?>" class="titulo_servicios text-uppercase text-left"
                                 onMouseOver="this.style.backgroundColor='#FE330A';
                                              this.style.color='white';
