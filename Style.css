@@ -13,24 +13,24 @@ WordPress Available:  yes
 /** Definición de fuentes locales **/
 @font-face {
     font-family: 'Conv_SimplyCriket';
-    src: url('fonts/SimplyCricket-Medium.ttf') format('truetype');
+    src: url('fonts/SimplyCricket/SimplyCricket-Medium.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'Conv_SimplyCriket';
-    src: url('fonts/SimplyCricket-Demibold.ttf') format('truetype');
+    font-family: 'Conv_SimplyCriketDemiBold';
+    src: url('fonts/SimplyCricket/SimplyCricket-Demibold.ttf') format('truetype');
     font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Conv_SimplyCriket';
-    src: url('fonts/SimplyCricket-Bold.ttf') format('truetype');
+    font-family: 'Conv_SimplyCriketBold';
+    src: url('fonts/SimplyCricket/SimplyCricket-Bold.ttf') format('truetype');
     font-weight: bolder;
 }
 
 @font-face {
-    font-family: 'Conv_SimplyCriket';
-    src: url('fonts/SimplyCricket-Medium.ttf') format('truetype');
+    font-family: 'Conv_SimplyCriketMedium';
+    src: url('fonts/SimplyCricket/SimplyCricket-Medium.ttf') format('truetype');
     font-weight: 100;
 }
 
@@ -283,7 +283,8 @@ h6, .h6 {
 .titulo_servicios {
     text-align: left;
     padding: 5px 0px 5px 15px;
-    color: rgb(58, 14, 14);
+    color: #FE330a;
+
 }
 
     /*******HOME - BLOG*******
