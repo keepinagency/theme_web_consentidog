@@ -292,15 +292,16 @@ input:focus {
     background-color: white;
 }
 .citahome{
-    font-size: 4.9em;
-    padding: 10px 0px 10px 20px;
-    opacity: 0.3;
+    font-size: 72.5pt;
     line-height: 1.1em;
+    color: #e5e5e5;
 }
 .citaautor{
-    font-size: 18px;
+    font-family: 'Conv_SimplyCriketMedium';
+    font-size: 16pt;
     float: right;
-    margin-bottom: 30px;
+    margin-bottom: 2%;
+    color: #cccccc;
 }
     
 
