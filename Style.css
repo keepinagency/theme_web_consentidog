@@ -19,20 +19,23 @@ WordPress Available:  yes
 @font-face {
     font-family: 'Conv_SimplyCriketDemiBold';
     src: url('fonts/SimplyCricket/SimplyCricket-Demibold.ttf') format('truetype');
-    font-weight: bold;
 }
 
 @font-face {
     font-family: 'Conv_SimplyCriketBold';
     src: url('fonts/SimplyCricket/SimplyCricket-Bold.ttf') format('truetype');
-    font-weight: bolder;
 }
 
 @font-face {
     font-family: 'Conv_SimplyCriketMedium';
     src: url('fonts/SimplyCricket/SimplyCricket-Medium.ttf') format('truetype');
-    font-weight: 100;
 }
+
+@font-face {
+    font-family: 'Conv_SimplyCriketBook';
+    src: url('fonts/SimplyCricket/SimplyCricket-Book.ttf') format('truetype');
+}
+
 
 
 * {
@@ -41,7 +44,7 @@ WordPress Available:  yes
 }
 
 body {
-    font-size: 14.5pt;
+    font-size: 13.5pt;
     color: #201716;
     /*background-color: white;*/
     background-color: #D1D1D1;
@@ -97,7 +100,7 @@ input:focus {
 *************/
 .header{
     /*border: thin solid yellow;*/
-    height: 180px;
+    height: 160px;
     background-color: white;
     position: fixed;
     width: 100%;
@@ -112,7 +115,7 @@ input:focus {
     filter: alpha(opacity=30); 
 }
 .subheader {
-    height: 147px;
+    height: 110px;
     background-color: rgba(255 , 255, 255, 0.5);
 }
 .area-logo{
@@ -139,7 +142,7 @@ input:focus {
 .area-menu{
     margin: 0px;
     padding: 0px;
-    height: 38px;
+    height: 33px;
     width: 100%;
     background-color: rgba(255 , 255, 255, 0.7);
 }
@@ -156,6 +159,7 @@ input:focus {
     padding-right: 5%;
     display: inline-block;
     text-transform: uppercase;
+    font-family: 'Conv_SimplyCriketBook';
     font-size: 0.8em;
     background-image: url("../theme_web_consentidog/img/lineadiv_menu.png");
     background-position: right;
@@ -188,11 +192,11 @@ input:focus {
 }
 
 .carruselHome{
-    height: 600px;
-    border: thin solid blue;
+    height: 416px;
+    border: thin solid blue !important;
 }
 .carrusel-post{
-    height: 680px;
+    height: 626px;
 }
 .carrusel-imagen {
     background-size: cover;
@@ -233,29 +237,43 @@ input:focus {
     background-image:url("../theme_web_consentidog/img/bg_educa_600px.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
-    height: 800px;
+    background-position: center;
+    height: 600px;
+}
+.area-tit-educa{
+    height: 15%;
 }
 .titulo-educadog{
-    font-weight: 500 !important;
+    font-family: 'Conv_SimplyCriketMedium';
+    font-size: 21.5pt;
 }
 .titulo_educa {
     color: #201716;
-    padding-top: 5%;
+    /*padding-top: 2%;*/
+    font-family: 'Conv_SimplyCriketDemiBold';
+    font-size: 1.1em;
+    font-weight: bold;
 }
 .titulo_educa:hover{
     color: #201716;
     font-weight: bolder;
 }
+.area-cont-educa{
+    height: 85%;
+}
+
 .link_educa{
     background-color: rgba(255 , 255, 255, 0.7);
 }
 .extracto-educa{
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 5%;
     border-top: solid thin black;
     height: 60%;
     font-weight: 600 !important;
+    font-family: 'Conv_SimplyCriketMedium';
+    font-size: 14.5pt;
 }
 .extracto-educa p{
     font-weight: bold !important;
