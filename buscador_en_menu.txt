@@ -1,0 +1,43 @@
+/**Buscador en menu**/
+function ConsentiDogbuscador( $items, $args ) {
+	if ($args->theme_location == 'header-menu') {
+		$items .= '<li class="menu-item item-search">'
+				. '<form role="search" method="get" class="search-form" action="'.home_url( '/' ).'">'
+				. '<label>'
+				. '<span class="screen-reader-text">' . _x( '', 'label' ) . '</span>'
+				. '<input type="search" class="search-field" placeholder="' . esc_attr_x( 'Buscar...', 'placeholder' ) . '" value="' . get_search_query() . '" name="s" title="' . esc_attr_x( 'Search for:', 'label' ) . '" />'
+				. '</label>'
+				. '<input type="submit" class="search-submit" value="" />'
+				. '</form>'
+				. '</li>';
+	}
+	return $items;
+}
+add_filter( 'wp_nav_menu_items', 'ConsentiDogbuscador', 10, 2);     // Buscador en menú
+
+        /*** Buscador ***/
+.menu-item .search-form input{
+	width: 80%;
+	padding: 0;
+	height: 30px;
+	padding: 8px;
+	border-radius: 6px;
+}
+.menu-item .search-form input::-moz-placeholder {
+  color: #ccc;
+  font-weight: 20px;
+}
+.item-search{
+	margin-top: 0px;
+}
+.menu-item .search-form input[type="submit"]{
+	width: 22px;
+	height: 22px;
+	padding: 0;
+    margin:0;
+	margin-left: 5px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: 16px;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Feedbin-Icon-home-search.svg/36px-Feedbin-Icon-home-search.svg.png);
+}
