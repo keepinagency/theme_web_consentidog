@@ -304,7 +304,6 @@ input:focus {
     color: #cccccc;
 }
     
-
 /******* HOME - SERVICIOS ******
 ********************************/
 
@@ -360,13 +359,6 @@ input:focus {
 }
         /**********************************************************
         ************CONTENEDOR GENERAL PARA PAGES - DEFAULT*********/
-        /*IMAGEN*/
-/*.imagen-pages{
-    background-image: url("../theme_web_consentidog/img/ConsentiDog-QuienesSomos.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1200px;
-}*/
         /*Título*/
 .titulo-pages{
     color: #E5E5E5;
@@ -382,17 +374,19 @@ input:focus {
 }
 /*Contenido*/
 .contenedor-contenido{
-    margin-top: 100px;
-    padding: 80px;
+    margin-top: 80px;
+    padding: 70px;
     background: rgba(229, 229, 229, 0.7);
     margin-left: auto;
     margin-right: auto;
     height: 600px;
 }
-.titulo-educadog{
-    margin-top: 100px;
-    padding: 80px;
+.titulo-interna{
+    margin-top: 80px;
+    padding: 70px;
     color: #fff;
+    font-family: 'Conv_SimplyCriketMedium';
+    font-size: 21.5pt;
 }
         /*********** BLOG ***********
         ****************************/
@@ -429,24 +423,7 @@ input:focus {
 }
         /*********** SERVICIOS ***********
         *********************************/
-.titulo-entradaservicios{
-    font-size: 18px;
-    text-align: center;
-}
-.contenedor-servicios{
-    border: thin solid#201716;
-}
-.link-entradaservicios{
-    text-align: center;
-    border: thin solid red;
-    background: rgba(229, 229, 229, 0.7);
-    padding: 30px;
-}
-.contenido-servicios{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
+
 .btnservicios{ 
     margin: 30px;
     color: rgb(0, 0, 0);
@@ -466,8 +443,8 @@ input:focus {
     width: 80%;
 }
 .titulo-pagesform{
-    margin-top: 100px;
-    padding-top: 80px;
+    margin-top: 80px;
+    padding-top: 60px;
     font-size: 26px;
     text-align: center;
     color: #201716;

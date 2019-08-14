@@ -4,7 +4,6 @@ Template Name: Contactanos
 Template Type Post: Page
 */
 get_header();
-$ima = get_the_post_thumbnail();
 ?>
 <div class="row col-md-12 m-0 p-0 contentedor-general" 
         style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>'); 

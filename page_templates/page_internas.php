@@ -4,14 +4,13 @@ Template Name: Internas
 Template Type Post: Page
 */
 get_header();
-$ima = get_the_post_thumbnail();
 ?>
 <div class="row contenedor-general col-md-12 p-0 m-0" 
             style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');">
     <?php if (have_posts()) :?>
         <div class="row p-0 m-0">
             <div class="col-12 h-25 text-center m-0 p-0  ">
-                <h2 class="text-uppercase text-white h-100 titulo-educadog
+                <h2 class="text-uppercase text-white h-100 titulo-interna
                             d-flex align-items-center justify-content-center">
                             <?php the_title(); ?>
                 <h2>
