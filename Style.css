@@ -246,6 +246,7 @@ input:focus {
 .titulo-educadog{
     font-family: 'Conv_SimplyCriketMedium';
     font-size: 21.5pt;
+    height: 100%;;
 }
 .titulo_educa {
     color: #201716;
@@ -264,6 +265,7 @@ input:focus {
 
 .link_educa{
     background-color: rgba(255 , 255, 255, 0.7);
+    max-height: 90%;
 }
 .extracto-educa{
     margin-left: 15%;
