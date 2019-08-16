@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <link href="http://allfont.es/allfont.css?fonts=cricket" rel="stylesheet" type="text/css" />
+    <!--link href="http://allfont.es/allfont.css?fonts=cricket" rel="stylesheet" type="text/css" /-->
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,13 +17,7 @@
 <body <?php body_class(); ?>> 
 <div class="container-fluid p-sm-0 m-sm-0">
     <?php
-        $classaddhome = "";
-        /*if ( is_front_page() ) {
-            // This is the blog posts index
-            require_once(Consentidog_TEMP_PARTS . '/home.php');
-            $classaddhome = "header_home";
-        }*/
-        
+        $classaddhome = "";        
     ?>
     <div class="header <?=$classaddhome; ?> p-0 m-0 bg-transparent">
         <div class="subheader row p-0 m-0">
@@ -61,5 +55,3 @@
             ?>
         </div>
     </div><!-- header --> 
-
-    <!--div class="row cont-central p-0 m-0"-->
