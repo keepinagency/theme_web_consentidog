@@ -15,32 +15,35 @@ $arregloservicios = new WP_Query(array(
     <?php
     if ($arregloservicios->have_posts()) :?>
         <div class="row p-0 m-0 h-100">
-            <div class="row col-12 pl-5 pr-5 pb-5 m-0 h-50">
+            <div class="row col-12 m-0 p-0">
                 <?php 
                     while ($arregloservicios->have_posts()) : $arregloservicios->the_post();?>
-                    <div class="col-md-12 m-0 p-0" 
+                    <div class="cont col-md-12 m-0 p-0" 
                         style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');
-                        background-repeat:no-repeat; background-size:cover;">
-                        <div class="col-md-12 m-0 p-0">
-                            <h2 class="text-uppercase text-white titulo-servicios
-                                        d-flex align-items-center justify-content-center">
-                                <a class="titulo-entradaservicios" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>       
-                            </h2>
-                        </div>
-                        <div class="col-12 p-0 h-50  text-center">
-                                <div class="contenedor-servicios d-flex align-items-center justify-content-center">
-                                    <?php the_excerpt();?>
-                                </div>   
-                                <div class="contenido-serviciosC">
-                                    <input class="btnservicios" type="submit" name="solicitar" value ="SOLICITAR">
-                                </div>                        
+                        background-repeat:no-repeat; background-size:100%;">
+                        <div class="contenedor-servicios mt-5 pt-5">
+                            <div class="col-md-12 m-0 p-5">
+                                <h2 class="text-uppercase  titulo-servicios 
+                                            d-flex align-items-center justify-content-center">
+                                    <a class="titulo-entradaservicios" href="<?php the_permalink(); ?>"> <?php the_title(); ?></a>       
+                                </h2>
+                            </div>
+                            <div class=" col-md-12 text-center">
+                                    <div class="contenido-servicios col-md-12 pl-5 pr-5 
+                                                d-flex align-items-center justify-content-center">
+                                        <?php the_content();?>
+                                    </div>   
+                                    <div class="contenido-serviciosC p-5">
+                                        <input class="btn btn-light btn-masinfo" type="submit" name="solicitar" value ="SOLICITAR"
+                                        style="width:15%;">
+                                    </div>                        
+                            </div>
                         </div>
                     <?php endwhile; else :?>
-                    <p>Disculpe no encontramos ninguna entrada que coincidiera con su criterio de búsqueda</p>  
+                        <p>Disculpe no encontramos ninguna entrada que coincidiera con su criterio de búsqueda</p>  
                     <?php endif; ?> 
                 </div>      
             </div>
         </div> 
-        
 </div>
 <?php get_footer();?>

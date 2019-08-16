@@ -423,7 +423,6 @@ input:focus {
 }
         /*********** SERVICIOS ***********
         *********************************/
-
 .btnservicios{ 
     margin: 30px;
     color: rgb(0, 0, 0);
@@ -433,6 +432,31 @@ input:focus {
     height: 40px;
     width: 150px;
 }
+.cont{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+.contenedor-servicios{
+    background: rgba(229, 229, 229, 0.5);
+    /*margin: 50px 5px 5px 5px;*/
+}
+.contenido-servicios{
+    padding-right: 200px !important;
+    padding-left: 200px !important;
+}
+.titulo-servicios{
+    margin-top: 20px;
+}
+.titulo-entradaservicios{
+    font-family: 'Conv_SimplyCriketMedium';
+    font-size: 21.5pt;
+    color: #201716;
+}
+.titulo-entradaservicios:hover{
+    text-decoration: none;
+    color: #333131;
+}
+
         /*********** CONTACTANOS FORM ***********
         ****************************************/
 .contenedor-contenidoform{
