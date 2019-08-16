@@ -391,9 +391,9 @@ input:focus {
         /*********** BLOG ***********
         ****************************/
 .imagen-blog{
-    background-image: url("../theme_web_consentidog/img/ConsentiDog-PortadaBlog.jpg");
+    /*background-image: url("../theme_web_consentidog/img/ConsentiDog-PortadaBlog.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 .contenedor-blog{
     width: 100%;
