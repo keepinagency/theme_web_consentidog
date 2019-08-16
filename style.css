@@ -1,0 +1,510 @@
+@charset "UTF-8";
+/*
+Theme Name: Keepin - ConsentiDog
+Theme URI: https://www.keepin.com.ve/
+Author: Team Keepin
+Author URI: https://www.keepin.com.ve
+Description: Primera versión del tema para la Web de ConsentiDog. Uso exclusivo de ConsentiDog
+Version: 0.0.1 
+Text Domain: Keepin
+WordPress Available:  yes
+*/
+
+/** Definición de fuentes locales **/
+@font-face {
+    font-family: 'Conv_SimplyCriket';
+    src: url('fonts/SimplyCricket/SimplyCricket-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Conv_SimplyCriketDemiBold';
+    src: url('fonts/SimplyCricket/SimplyCricket-Demibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Conv_SimplyCriketBold';
+    src: url('fonts/SimplyCricket/SimplyCricket-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Conv_SimplyCriketMedium';
+    src: url('fonts/SimplyCricket/SimplyCricket-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Conv_SimplyCriketBook';
+    src: url('fonts/SimplyCricket/SimplyCricket-Book.ttf') format('truetype');
+}
+
+
+
+* {
+    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    font-size: 13.5pt;
+    color: #201716;
+    /*background-color: white;*/
+    background-color: #D1D1D1;
+}
+
+h1, .h1{
+    font-size: 2em;
+}
+
+h2, .h2{
+    font-size: 1.7em;
+}
+
+h3, .h3{
+    font-size: 1.5em;
+}
+
+h4, .h4{
+    font-size: 1.2em;
+}
+
+.text-secondary{
+    color:#cccccc !important;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-weight: bold;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: #b0b0b0;
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #b0b0b0;
+}
+  
+::placeholder {
+    color: #b0b0b0;
+}
+
+input:focus { 
+    outline: none;
+  }
+
+
+/*** HEADER ***
+*************/
+.header{
+    /*border: thin solid yellow;*/
+    height: 160px;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 100000 !important;
+}
+.header_home{
+    z-index: 100000 !important;
+    position: relative;
+    top: -600px !important;
+    opacity: 0.3;
+    filter: alpha(opacity=30); 
+}
+.subheader {
+    height: 110px;
+    background-color: rgba(255 , 255, 255, 0.5);
+}
+.area-logo{
+    height: 100%;
+}
+.navbar-brand{
+    line-height: 130px;
+    width: 100%;
+}
+.imglogo{
+    width: 337px;
+}
+
+.buscador_txt{
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    border-radius: 1rem;
+    border: thin solid white;
+    padding-top:5px;
+}
+
+/** Menu header **/
+.area-menu{
+    margin: 0px;
+    padding: 0px;
+    height: 33px;
+    width: 100%;
+    background-color: rgba(255 , 255, 255, 0.7);
+}
+.header-menu {
+    margin: 0px;
+    padding: 0px;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+.header-menu li{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Conv_SimplyCriketBook';
+    font-size: 0.8em;
+    background-image: url("../theme_web_consentidog/img/lineadiv_menu.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.header-menu a{
+    text-decoration: none;
+    color: #201716;
+    
+}
+.header-menu a:hover{
+    color:#FE330A;
+
+}
+.buscador_txt{
+    background-image: url("../theme_web_consentidog/img/lupa.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+/*** Contenedor de contenido central BODY ***
+******************************************/
+.cont-central{
+    padding: 0px;
+    margin: 0px;
+    border: thin solid grey;
+}
+
+.carruselHome{
+    height: 416px;
+    border: thin solid blue !important;
+}
+.carrusel-post{
+    height: 626px;
+}
+.carrusel-imagen {
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+}
+
+/*** HOME - FORMULARIO ***
+***********************/
+
+.area-form{
+    height: 100%;
+}
+
+.bg-form-reserva-home{
+    height: 290px;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    border: thin solid grey;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    margin-top: 30px;;
+}
+
+
+.btn-light{
+    border: thin solid lightgrey;
+    border-radius: 0.5em;
+}
+
+
+    /*******HOME - EDUCA******
+    **************************/
+.contenedor-educa{
+    background-image:url("../theme_web_consentidog/img/bg_educa_600px.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+.area-tit-educa{
+    height: 15%;
+}
+.titulo-educadog{
+    font-family: 'Conv_SimplyCriketMedium';
+    font-size: 21.5pt;
+}
+.titulo_educa {
+    color: #201716;
+    /*padding-top: 2%;*/
+    font-family: 'Conv_SimplyCriketDemiBold';
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.titulo_educa:hover{
+    color: #201716;
+    font-weight: bolder;
+}
+.area-cont-educa{
+    height: 85%;
+}
+
+.link_educa{
+    background-color: rgba(255 , 255, 255, 0.7);
+}
+.extracto-educa{
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 5%;
+    border-top: solid thin black;
+    height: 60%;
+    font-weight: 600 !important;
+    font-family: 'Conv_SimplyCriketMedium';
+    font-size: 14.5pt;
+}
+.extracto-educa p{
+    font-weight: bold !important;
+}
+.area-btn-educa{
+    height: 15%;
+}
+.btn-masinfo{
+    width: 40%;
+    font-weight: light !important;
+}
+
+    /*******HOME - CITA*******
+    **************************/
+.contenedor-cita{
+    background-color: white;
+}
+.citahome{
+    font-size: 72.5pt;
+    line-height: 1.1em;
+    color: #e5e5e5;
+}
+.citaautor{
+    font-family: 'Conv_SimplyCriketMedium';
+    font-size: 16pt;
+    float: right;
+    margin-bottom: 2%;
+    color: #cccccc;
+}
+    
+
+/******* HOME - SERVICIOS ******
+********************************/
+
+.link_servicios{
+    background: white;
+    float: left;
+    width: 50%;
+    border: 1px solid #FE330A;
+}
+.titulo_servicios {
+    text-align: left;
+    padding: 5px 0px 5px 15px;
+    color: #FE330a;
+
+}
+
+    /*******HOME - BLOG*******
+    **************************/
+.contenedor-blogHome{
+    background-color: white;
+    width: 100%;
+}
+.link_blog{
+    float: left;
+    text-align: center;
+    width: 33%;
+    padding: 5px;
+    background-color:white;
+}
+.custom-tituloblog{
+    font-size: 1.5em;
+    color: #FE330A;
+    background-color:white;
+}
+.titulo-blog {
+    background: rgba(0, 0, 0, 0.65) !important;
+    /*height: 100px;*/
+}
+.titulo_blog{
+    text-decoration: none !important;
+}
+
+    /*******HOME - FOOTER*******
+    **************************/
+.contenedor-footer{
+    background: #fff;
+}
+.contenido-footer{
+    text-align: center;
+    padding: 100px 100px 40px 100px;
+    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif; 
+    font-size: 1em;
+}
+        /**********************************************************
+        ************CONTENEDOR GENERAL PARA PAGES - DEFAULT*********/
+        /*IMAGEN*/
+/*.imagen-pages{
+    background-image: url("../theme_web_consentidog/img/ConsentiDog-QuienesSomos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1200px;
+}*/
+        /*Título*/
+.titulo-pages{
+    color: #E5E5E5;
+    padding-top: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+/***CUSTOM TITULO****/
+.custom-titulo{
+    text-align: center;
+    font-size: 26px;
+    color: #FE330A;
+}
+/*Contenido*/
+.contenedor-contenido{
+    margin-top: 100px;
+    padding: 80px;
+    background: rgba(229, 229, 229, 0.7);
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+}
+.titulo-educadog{
+    margin-top: 100px;
+    padding: 80px;
+    color: #fff;
+}
+        /*********** BLOG ***********
+        ****************************/
+.imagen-blog{
+    background-image: url("../theme_web_consentidog/img/ConsentiDog-PortadaBlog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenedor-blog{
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(177, 171, 171);
+    display: inline-block;
+    text-align: center;
+}
+.listas-blog{
+    width: 100%;
+    display: inline-block;
+}
+.link-entradablog{
+    display: inline-block;
+    width: 30%;
+    border: thin solid black;
+    text-align: center;
+    margin: 10px;
+    
+}
+.titulo-entradablog{
+    font-size: 18px;
+}
+.extracto-blog{
+    width: 100%;
+    text-align: justify;
+}
+        /*********** SERVICIOS ***********
+        *********************************/
+.titulo-entradaservicios{
+    font-size: 18px;
+    text-align: center;
+}
+.contenedor-servicios{
+    border: thin solid#201716;
+}
+.link-entradaservicios{
+    text-align: center;
+    border: thin solid red;
+    background: rgba(229, 229, 229, 0.7);
+    padding: 30px;
+}
+.contenido-servicios{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btnservicios{ 
+    margin: 30px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 1.2em;
+    height: 40px;
+    width: 150px;
+}
+        /*********** CONTACTANOS FORM ***********
+        ****************************************/
+.contenedor-contenidoform{
+    text-align: center;
+    background: rgba(229, 229, 229, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.titulo-pagesform{
+    margin-top: 100px;
+    padding-top: 80px;
+    font-size: 26px;
+    text-align: center;
+    color: #201716;
+}
+.wpcf7-form{
+    margin-top: 20px;
+    padding: 30px 0px 30px 0px;
+}
+.wpcf7-text {
+    width: 600px;
+    height: 40px;
+    padding: 0px;
+    margin: 0px;
+} 
+.wpcf7-textarea {
+    width: 600px;
+    height: 160px;;
+}
+.wpcf7-text::placeholder{
+    text-align: center;
+    font-size: 14px;
+}
+.wpcf7-textarea::placeholder{
+    text-align: center;
+    line-height: 140px;
+    font-size: 14px;
+}
+.wpcf7-submit {
+    bottom: 0px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 1.2em;
+    height: 40px;
+    width: 150px;
+}
+.wpcf7-form label{
+    padding: 0px;
+    margin: -10px;
+}
