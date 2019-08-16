@@ -12,12 +12,9 @@ $arregloblog = new WP_Query(array(
     'paged'         => $paginasblog
 ));
 ?>
-<div class="" 
-    style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');
-    background-size:100%; background-repeat:no-repeat; height: 520px;">&nbsp
-</div>
-    
-        
+<div class="" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');
+        background-size:100%; background-repeat:no-repeat; height: 520px;">
+</div>      
         
 <?php
 if ($arregloblog->have_posts()) :?>
