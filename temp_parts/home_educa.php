@@ -11,7 +11,7 @@ $nuevo_arreglo = new WP_Query(array(
     <?php if ($nuevo_arreglo->have_posts()) :?>
         <div class="row p-0 m-0">
             <div class="col-12 area-tit-educa text-center p-0 m-0 ">
-                <h2 class="text-uppercase text-secondary h-100 titulo-educadog
+                <h2 class="text-uppercase text-secondary titulo-educadog p-0 m-0
                           d-flex align-items-center justify-content-center">
                     Educa a tu perro con los mejores
                 <h2>
