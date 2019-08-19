@@ -218,14 +218,14 @@ input:focus {
 
 .bg-form-reserva-home{
     height: 290px;
-    width: 50%;
+    width: 55% !important;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 1rem;
     border: thin solid grey;
     position: absolute;
     bottom: 20%;
     left: 20%;
-    margin-top: 30px;;
+    margin-top: 30px;
 }
 
 
