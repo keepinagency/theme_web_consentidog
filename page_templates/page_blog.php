@@ -4,7 +4,6 @@ Template Name: Blog
 Template Post Type: page 
 */
 get_header();
-$ima = get_the_post_thumbnail();
 $paginasblog = get_query_var('paged');
 $arregloblog = new WP_Query(array(
     'post_type'     => 'post',
@@ -13,8 +12,9 @@ $arregloblog = new WP_Query(array(
     'paged'         => $paginasblog
 ));
 ?>
-<div class="imagen-blog"><?php echo $ima; ?></div>
-        
+<div class="" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');
+        background-size:100%; background-repeat:no-repeat; height: 520px;">
+</div>      
         
 <?php
 if ($arregloblog->have_posts()) :?>

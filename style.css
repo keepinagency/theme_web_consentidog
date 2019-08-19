@@ -50,6 +50,10 @@ body {
     background-color: #D1D1D1;
 }
 
+a{
+    text-decoration-color: #FE330A !important; 
+}
+
 h1, .h1{
     font-size: 2em;
 }
@@ -246,6 +250,7 @@ input:focus {
 .titulo-educadog{
     font-family: 'Conv_SimplyCriketMedium';
     font-size: 21.5pt;
+    height: 100%;
 }
 .titulo_educa {
     color: #201716;
@@ -264,6 +269,7 @@ input:focus {
 
 .link_educa{
     background-color: rgba(255 , 255, 255, 0.7);
+    max-height: 90%;
 }
 .extracto-educa{
     margin-left: 15%;
@@ -304,7 +310,6 @@ input:focus {
     color: #cccccc;
 }
     
-
 /******* HOME - SERVICIOS ******
 ********************************/
 
@@ -341,6 +346,7 @@ input:focus {
 }
 .titulo-blog {
     background: rgba(0, 0, 0, 0.65) !important;
+    /*text-decoration-color: #FE330A !important;
     /*height: 100px;*/
 }
 .titulo_blog{
@@ -360,13 +366,6 @@ input:focus {
 }
         /**********************************************************
         ************CONTENEDOR GENERAL PARA PAGES - DEFAULT*********/
-        /*IMAGEN*/
-/*.imagen-pages{
-    background-image: url("../theme_web_consentidog/img/ConsentiDog-QuienesSomos.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 1200px;
-}*/
         /*Título*/
 .titulo-pages{
     color: #E5E5E5;
@@ -382,24 +381,26 @@ input:focus {
 }
 /*Contenido*/
 .contenedor-contenido{
-    margin-top: 100px;
-    padding: 80px;
+    margin-top: 80px;
+    padding: 70px;
     background: rgba(229, 229, 229, 0.7);
     margin-left: auto;
     margin-right: auto;
     height: 600px;
 }
-.titulo-educadog{
-    margin-top: 100px;
-    padding: 80px;
+.titulo-interna{
+    margin-top: 80px;
+    padding: 70px;
     color: #fff;
+    font-family: 'Conv_SimplyCriketMedium';
+    font-size: 21.5pt;
 }
         /*********** BLOG ***********
         ****************************/
 .imagen-blog{
-    background-image: url("../theme_web_consentidog/img/ConsentiDog-PortadaBlog.jpg");
+    /*background-image: url("../theme_web_consentidog/img/ConsentiDog-PortadaBlog.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
 }
 .contenedor-blog{
     width: 100%;
@@ -427,26 +428,11 @@ input:focus {
     width: 100%;
     text-align: justify;
 }
+.enlace-blog{
+    text-decoration-color: #FE330A;
+}
         /*********** SERVICIOS ***********
         *********************************/
-.titulo-entradaservicios{
-    font-size: 18px;
-    text-align: center;
-}
-.contenedor-servicios{
-    border: thin solid#201716;
-}
-.link-entradaservicios{
-    text-align: center;
-    border: thin solid red;
-    background: rgba(229, 229, 229, 0.7);
-    padding: 30px;
-}
-.contenido-servicios{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-}
 .btnservicios{ 
     margin: 30px;
     color: rgb(0, 0, 0);
@@ -456,6 +442,31 @@ input:focus {
     height: 40px;
     width: 150px;
 }
+.cont{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+.contenedor-servicios{
+    background: rgba(229, 229, 229, 0.5);
+    /*margin: 50px 5px 5px 5px;*/
+}
+.contenido-servicios{
+    padding-right: 200px !important;
+    padding-left: 200px !important;
+}
+.titulo-servicios{
+    margin-top: 20px;
+}
+.titulo-entradaservicios{
+    font-family: 'Conv_SimplyCriketMedium';
+    font-size: 21.5pt;
+    color: #201716;
+}
+.titulo-entradaservicios:hover{
+    text-decoration: none;
+    color: #333131;
+}
+
         /*********** CONTACTANOS FORM ***********
         ****************************************/
 .contenedor-contenidoform{
@@ -466,8 +477,8 @@ input:focus {
     width: 80%;
 }
 .titulo-pagesform{
-    margin-top: 100px;
-    padding-top: 80px;
+    margin-top: 80px;
+    padding-top: 60px;
     font-size: 26px;
     text-align: center;
     color: #201716;
