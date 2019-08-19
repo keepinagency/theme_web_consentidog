@@ -283,6 +283,9 @@ input:focus {
 }
 .extracto-educa p{
     font-weight: bold !important;
+    max-height: 100%;
+    /*border: thin solid red;*/
+    font-size:1.3vw;
 }
 .area-btn-educa{
     height: 15%;
