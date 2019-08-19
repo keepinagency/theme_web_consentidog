@@ -50,6 +50,10 @@ body {
     background-color: #D1D1D1;
 }
 
+a{
+    text-decoration-color: #FE330A !important; 
+}
+
 h1, .h1{
     font-size: 2em;
 }
@@ -343,6 +347,7 @@ input:focus {
 }
 .titulo-blog {
     background: rgba(0, 0, 0, 0.65) !important;
+    /*text-decoration-color: #FE330A !important;
     /*height: 100px;*/
 }
 .titulo_blog{
@@ -428,6 +433,9 @@ input:focus {
 .extracto-blog{
     width: 100%;
     text-align: justify;
+}
+.enlace-blog{
+    text-decoration-color: #FE330A;
 }
         /*********** SERVICIOS ***********
         *********************************/

@@ -7,4 +7,3 @@ $autorcita = get_option('autorcita', 'MARTIN BUBER');
         <div class="citaautor col-md-2"><?php echo $autorcita;?></div>
     </div>
 </div>
-
