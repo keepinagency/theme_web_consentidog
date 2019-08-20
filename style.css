@@ -50,8 +50,12 @@ body {
     background-color: #D1D1D1;
 }
 
-a{
+a {
     text-decoration-color: #FE330A !important; 
+}
+
+b {
+    font-family: 'Conv_SimplyCriketBold';
 }
 
 h1, .h1{
@@ -334,18 +338,26 @@ input:focus {
 .contenedor-blogHome{
     background-color: white;
     width: 100%;
+    /*padding-left: % !important;
+    padding-right: 10% !important;*/
 }
 .link_blog{
     float: left;
     text-align: center;
     width: 33%;
     padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color:white;
 }
 .custom-tituloblog{
     font-size: 1.5em;
     color: #FE330A;
     background-color:white;
+    height: 122px !important;
+}
+.miniatura_blog{
+    background-position: center;
 }
 .titulo-blog {
     background: rgba(0, 0, 0, 0.65) !important;
