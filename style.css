@@ -417,7 +417,6 @@ input:focus {
     border: thin solid black;
     text-align: center;
     margin: 10px;
-    
 }
 .titulo-entradablog{
     font-size: 18px;
@@ -520,4 +519,13 @@ input:focus {
 .wpcf7-form label{
     padding: 0px;
     margin: -10px;
+}
+
+.slider {
+    width: 50% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fondo-slider{
+    height: 900px;
 }
