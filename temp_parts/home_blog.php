@@ -10,9 +10,9 @@ $nuevo_arreglo = new WP_Query(array(
 <div class="row contenedor-blogHome p-0 m-0">
     <?php if ($nuevo_arreglo->have_posts()) :?>
         <div class="listas_blogHome col-md-12">
-            <div class="custom-tituloblog h-25 
+            <div class="custom-tituloblog text-uppercase
                         d-flex align-items-center 
-                        justify-content-center">ConsentiNotas
+                        justify-content-center">Consenti<b>Notas</b>
             </div>
             <?php
             while ($nuevo_arreglo->have_posts()) :
