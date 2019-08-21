@@ -1,17 +1,6 @@
 <?php
 get_header();
-/*$paginasblog = get_query_var('paged');
-$arreglopost = new WP_Query(array(
-	'post_type'     => 'post',
-	'post_status'	=> 'publish',
-    'category_name' => 'blog',
-    'posts_per_page'=> 3,
-    'paged'         => $paginasblog
-));*/
 ?>
-
-
-
 <div class="row contenedor-general col-md-12 p-0 m-0" 
             style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');
 					background-repeat:no-repeat; background-size:cover;">
@@ -35,22 +24,19 @@ $arreglopost = new WP_Query(array(
 
                             </div>
                         </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="javascript:history.go(-1)" 
+                                style="text-decoration:none; color:#FE330A;">
+                                <h2>Volver</h2></a>
+                        </div>
                 <?php endwhile; else :?>
-                    <p>Disculpe no encontramos ninguna entrada que coincidieran con su criterio de búsqueda.</p>
-					<div class="cont_pag_numbers" >
-						<?php 
-							echo paginate_links(array(
-							'total' => $arreglopost->max_num_pages
-						));
-						?>
-					</div>
+                    <p>Disculpe no encontramos ninguna entrada que coincidieran con su criterio de búsqueda.</p>                    
                 <?php endif; ?>
                 <?php //endwhile;?>
             </div>
         </div>
         <?php //endif;?>
 </div>
-
 <?php
 get_footer();
 ?>
