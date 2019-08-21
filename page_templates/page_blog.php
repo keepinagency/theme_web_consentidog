@@ -43,15 +43,13 @@ $arregloblog = new WP_Query(array(
                     </div>
             <?php endwhile;?>
 		</div>
-        
+            <div class="cont_pag_numbers" >
+                <?php 
+                    echo paginate_links(array(
+                    'total' => $arregloblog->max_num_pages
+                ));
+                ?>
+            </div>
     <?php endif;?>
 </div>
-<script>
-    {  
-        var titulo = document.getElementById('consentinotas');
-        var title = titulo.innerHTML;
-        var longi = title.substr(8,12);
-        document.write(longi.bold);
-    }
-</script> 
 <?php get_footer();?>

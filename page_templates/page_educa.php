@@ -19,14 +19,14 @@ $e = 0;
         <div class="col-md-12 p-0 m-0">
             <div id="carousel-1" class="carousel slide" data-ride="carousel">
                 <!-- Indicadores -->
-                <ol class="carousel-indicators">
+                <!--ol class="carousel-indicators">
                     <?php while($posts_slide->have_posts()) : $posts_slide->the_post();?>
                     <li data-target="#carousel-1" data-slide-to="<?php echo $e; ?>" 
                         <?php if($e == 0) : ?> class="active"<?php endif;?>>
                     </li>
                         <?php $e++; endwhile; ?>
                 </ol>
-                
+                -->
                 <!-- Contenedor de los Slider -->
                 <div class="carousel-inner" role="listbox">
                     <?php while($posts_slide->have_posts()) : $posts_slide->the_post();?>
