@@ -39,7 +39,7 @@
             <div class="area-buscador col-sm-5 p-0 m-0
                         d-flex align-items-center">
                 <div class="buscador w-100">
-                    <?php echo do_shortcode("[wpbsearch]"); ?>
+                    <?php echo do_shortcode("[wpbsearch]"); /*get_search_form();*/?>
                 </div>
             </div>
         </div><!-- header -->

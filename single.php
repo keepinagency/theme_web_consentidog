@@ -1,6 +1,7 @@
 <?php
 get_header();
 ?>
+
 <div class="row contenedor-general col-md-12 p-0 m-0" 
             style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');
 					background-repeat:no-repeat; background-size:cover;">
