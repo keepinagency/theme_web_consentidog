@@ -361,8 +361,6 @@ input:focus {
 }
 .titulo-blog {
     background: rgba(0, 0, 0, 0.65) !important;
-    /*text-decoration-color: #FE330A !important;
-    /*height: 100px;*/
 }
 .titulo_blog{
     text-decoration: none !important;
@@ -545,4 +543,12 @@ input:focus {
 }
 .fondo-slider{
     height: 900px;
+}
+        /***BUSQUEDA***/
+.contenedor-general-buqueda{
+    padding-top: 150px !important;
+}
+.titulo-busq{
+    text-align: center !important;
+    background: rgba(0, 0, 0, 0.65) !important;
 }

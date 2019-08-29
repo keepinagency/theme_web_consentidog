@@ -1,33 +1,43 @@
 <?php
-/* Template Name: Busqueda */        
+/* The template for displaying Search Results pages. */        
 get_header(); 
+$s=get_search_query();
+$args = array(
+    's' =>$s
+);
+$the_query = new WP_Query( $args );
 ?>   
-<div class="row contenedor-general col-md-12 pt-5 m-0">                
-    <?php if (have_posts()) :
-        while (have_posts()) : the_post();?>
-        <div class="row p-0 m-0" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');
-                    background-size:100%; background-repeat:no-repeat; height: 600px;">
-            <div id="post-<?php //the_ID(); ?>" class="col-12 h-25 text-center m-0 p-0" >
-                <a class="titulo-blog w-100 h-100 d-flex align-items-center
+<div class="row contenedor-general-buqueda col-md-12 pt-5 m-0">                
+    <?php if ($the_query->have_posts()) :
+        _e("<h2 style='font-weight:bold;color:#000'>Resultados de la Busqueda: ".get_query_var('s')."</h2>");
+        while ($the_query->have_posts()) : $the_query->the_post();?>
+        <div class="row pt-5 m-0">
+            <div class="m-0 p-0" >
+                <a class="titulo-busq d-flex align-items-center
                             text-center" href="<?php the_permalink(); ?>" >      
-                    <h4 class="enlace-blog text-uppercase text-center text-white w-100">
+                    <h4 class="text-uppercase text-center text-white">
                         <?php the_title(); ?>
+                        <?php //echo "$s"; ?>
                     </h4>
                 </a>
+                <div class="w-25 text-center m-0 p-0">
+                    <?php the_excerpt(); ?>
+                </div>
+                <div class="w-25 text-center m-0 p-0">
+                    <?php the_post_thumbnail('medium'); ?>
+                </div>
             </div>
-            <div class="col-12 h-25 text-center m-0 p-0">
-                <?php the_excerpt(); ?>
-                <?php //echo "$s"; ?>
-            </div>
-            <div class="col-12 h-50 text-center m-0 p-0">
-                <?php //the_post_thumbnail('medium'); ?>
-                <?php //echo "$s"; ?>
-            </div>
-            <div class="row col-12 pt-5 m-0 h-75" >
-                <?php endwhile; else :?>
-                    <p>Disculpe no encontramos ningun reultado que coincidiera con su criterio de búsqueda.</p>                    
-                <?php endif; ?>
+
+            <div class="row col-12 pt-5 m-0 h-100" >
+                <div class="d-flex align-items-center text-center">
+                    <?php endwhile; else :?>
+                        <p class="alert alert-info">
+                            Disculpe no encontramos ningun reultado que coincidiera con su criterio de búsqueda.
+                        </p>                    
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
 </div>
+
 <?php get_footer(); ?>
