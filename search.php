@@ -13,7 +13,7 @@ $the_query = new WP_Query( $args );
         while ($the_query->have_posts()) : $the_query->the_post();?>
         <div class="row pt-5 m-0">
             <div class="m-0 p-0" >
-                <a class="titulo-busq d-flex align-items-center
+                <a class="titulo-busq w-25 d-flex align-items-center
                             text-center" href="<?php the_permalink(); ?>" >      
                     <h4 class="text-uppercase text-center text-white">
                         <?php the_title(); ?>
@@ -29,7 +29,7 @@ $the_query = new WP_Query( $args );
             </div>
 
             <div class="row col-12 pt-5 m-0 h-100" >
-                <div class="d-flex align-items-center text-center">
+                <div class="d-flex align-items-center text-center p-5 m-0">
                     <?php endwhile; else :?>
                         <p class="alert alert-info">
                             Disculpe no encontramos ningun reultado que coincidiera con su criterio de búsqueda.
