@@ -3,7 +3,7 @@
 get_header(); 
 $s=get_search_query();
 $args = array(
-    's' =>$s
+'s'   =>$s
 );
 $the_query = new WP_Query( $args );
 ?>   
