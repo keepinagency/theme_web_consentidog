@@ -9,11 +9,10 @@ $arregloblog = new WP_Query(array(
     'post_type'     => 'post',
     'category_name' => 'blog',
     'posts_per_page'=> 3,
+    'orderby'       => 'date',
     'paged'         => $paginasblog
 ));
 ?>
-<!--div class="" style="background-image:url('<?php //echo get_the_post_thumbnail_url(); ?>');
-        background-size:100%; background-repeat:no-repeat; height: 520px;"-->
 <div class="carrusel-imagen" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>'); 
                                     min-height: 520px; background-position: bottom right;">
     &nbsp;
