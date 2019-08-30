@@ -47,11 +47,15 @@ body {
     font-size: 13.5pt;
     color: #201716;
     /*background-color: white;*/
-    background-color: #D1D1D1;
+    background-color: rgb(252, 252, 252);
 }
 
-a{
+a {
     text-decoration-color: #FE330A !important; 
+}
+
+b {
+    font-family: 'Conv_SimplyCriketBold';
 }
 
 h1, .h1{
@@ -109,7 +113,7 @@ input:focus {
     position: fixed;
     width: 100%;
     top: 0px;
-    z-index: 100000 !important;
+    z-index: 10000 !important;
 }
 .header_home{
     z-index: 100000 !important;
@@ -218,14 +222,14 @@ input:focus {
 
 .bg-form-reserva-home{
     height: 290px;
-    width: 50%;
+    width: 55% !important;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 1rem;
     border: thin solid grey;
     position: absolute;
     bottom: 20%;
     left: 20%;
-    margin-top: 30px;;
+    margin-top: 30px;
 }
 
 
@@ -283,6 +287,9 @@ input:focus {
 }
 .extracto-educa p{
     font-weight: bold !important;
+    max-height: 100%;
+    /*border: thin solid red;*/
+    font-size:1.3vw;
 }
 .area-btn-educa{
     height: 15%;
@@ -331,23 +338,29 @@ input:focus {
 .contenedor-blogHome{
     background-color: white;
     width: 100%;
+    /*padding-left: % !important;
+    padding-right: 10% !important;*/
 }
 .link_blog{
     float: left;
     text-align: center;
     width: 33%;
     padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     background-color:white;
 }
 .custom-tituloblog{
     font-size: 1.5em;
     color: #FE330A;
     background-color:white;
+    height: 122px !important;
+}
+.miniatura_blog{
+    background-position: center;
 }
 .titulo-blog {
     background: rgba(0, 0, 0, 0.65) !important;
-    /*text-decoration-color: #FE330A !important;
-    /*height: 100px;*/
 }
 .titulo_blog{
     text-decoration: none !important;
@@ -356,13 +369,18 @@ input:focus {
     /*******HOME - FOOTER*******
     **************************/
 .contenedor-footer{
-    background: #fff;
+    background-color: #fff;
+    background-image:url("../theme_web_consentidog/img/bg_footer.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    height: 400px !important;
 }
 .contenido-footer{
     text-align: center;
-    padding: 100px 100px 40px 100px;
-    font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif; 
-    font-size: 1em;
+    padding: 8% 5% 2% 5%;
+    font-family: 'Conv_SimplyCriketBook';
+    font-size: 14.5pt;
 }
         /**********************************************************
         ************CONTENEDOR GENERAL PARA PAGES - DEFAULT*********/
@@ -397,15 +415,10 @@ input:focus {
 }
         /*********** BLOG ***********
         ****************************/
-.imagen-blog{
-    /*background-image: url("../theme_web_consentidog/img/ConsentiDog-PortadaBlog.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;*/
-}
 .contenedor-blog{
     width: 100%;
     padding: 10px;
-    background-color: rgb(177, 171, 171);
+    background-color: rgb(255, 255, 255);
     display: inline-block;
     text-align: center;
 }
@@ -419,7 +432,6 @@ input:focus {
     border: thin solid black;
     text-align: center;
     margin: 10px;
-    
 }
 .titulo-entradablog{
     font-size: 18px;
@@ -430,6 +442,10 @@ input:focus {
 }
 .enlace-blog{
     text-decoration-color: #FE330A;
+}
+.contenidoInter-blog{
+    background: rgba(0, 0, 0, 0.65) !important;
+    color: #E5E5E5;
 }
         /*********** SERVICIOS ***********
         *********************************/
@@ -518,4 +534,21 @@ input:focus {
 .wpcf7-form label{
     padding: 0px;
     margin: -10px;
+}
+
+.slider {
+    width: 50% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fondo-slider{
+    height: 900px;
+}
+        /***BUSQUEDA***/
+.contenedor-general-buqueda{
+    padding-top: 150px !important;
+}
+.titulo-busq{
+    text-align: center !important;
+    background: rgba(0, 0, 0, 0.65) !important;
 }
