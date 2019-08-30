@@ -12,8 +12,11 @@ $arregloblog = new WP_Query(array(
     'paged'         => $paginasblog
 ));
 ?>
-<div class="" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>');
-        background-size:100%; background-repeat:no-repeat; height: 520px;">
+<!--div class="" style="background-image:url('<?php //echo get_the_post_thumbnail_url(); ?>');
+        background-size:100%; background-repeat:no-repeat; height: 520px;"-->
+<div class="carrusel-imagen" style="background-image:url('<?php echo get_the_post_thumbnail_url(); ?>'); 
+                                    min-height: 520px; background-position: bottom right;">
+    &nbsp;
 </div>      
         
 <div class="row contenedor-blogHome p-0 m-0">
