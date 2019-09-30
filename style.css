@@ -8,6 +8,9 @@ Description: Primera versión del tema para la Web de ConsentiDog. Uso exclusivo
 Version: 0.0.1 
 Text Domain: Keepin
 WordPress Available:  yes
+
+Naranja: e95231
+Gris oscuro: 312b29
 */
 
 /** Definición de fuentes locales **/
@@ -123,14 +126,14 @@ input:focus {
     filter: alpha(opacity=30); 
 }
 .subheader {
-    height: 110px;
-    background-color: rgba(255 , 255, 255, 0.5);
+    height: 80px;
+    background-color:#eae7e5;/*rgba(255 , 255, 255, 0.5);*/
 }
 .area-logo{
     height: 100%;
 }
 .navbar-brand{
-    line-height: 130px;
+    line-height: 80px;
     width: 100%;
 }
 .imglogo{
@@ -152,7 +155,8 @@ input:focus {
     padding: 0px;
     height: 33px;
     width: 100%;
-    background-color: rgba(255 , 255, 255, 0.7);
+    background-color: white;/*rgba(255 , 255, 255, 0.7);*/
+    border-bottom: solid thin #c8c6c5;
 }
 .header-menu {
     margin: 0px;
@@ -551,4 +555,10 @@ input:focus {
 .titulo-busq{
     text-align: center !important;
     background: rgba(0, 0, 0, 0.65) !important;
+}
+.nav-next a{
+    color:#e95231;
+}
+.nav-previous a{
+    color:#e95231;
 }
