@@ -19,8 +19,10 @@ $posts_slides = new WP_Query(array (
 				while($posts_slides->have_posts()) : 
 					$posts_slides->the_post();?>
 
-					<div class="carousel-item <?php if ($i == 1) echo 'active'; ?>"> 
-						<img class="d-block w-100" src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+					<div class="carousel-item <?php if ($i == 1) echo 'active'; ?>"
+						style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>');"> 
+						<!--img class="d-block w-100" src="<?php //echo get_the_post_thumbnail_url(); ?>" alt=""-->
+						&nbsp;
 					</div>
 
 					<?php 

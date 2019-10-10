@@ -11,8 +11,9 @@ $nuevo_arreglo = new WP_Query(array(
 <div class="contenedor-educa row col-12 p-0 m-0 w-100 d-flex flex-row">
     <?php if ($nuevo_arreglo->have_posts()) :?>
         
-        <div class="row area-tit-educa col-12 d-flex align-items-center justify-content-center p-0 m-0">
-            <h2 class="text-uppercase titulo-educadog p-0 m-0 ">
+        <div class="row area-tit-educa col-12 d-flex align-items-center justify-content-center p-0 m-0 ">
+            <h2 class="text-uppercase titulo-educadog  p-0 m-0 wow rubberBand" 
+            data-wow-offset="10" data-wow-delay="3s" data-wow-iteration="1" data-wow-duration="1s">
                 Educa a tu perro con los mejores
             <h2>
         </div>
@@ -21,7 +22,7 @@ $nuevo_arreglo = new WP_Query(array(
             <?php
             while ($nuevo_arreglo->have_posts()) :
                 $nuevo_arreglo->the_post();?>
-                    <div class="col-4 p-0 h-100 text-center" >
+                    <div class="col-4 p-0 h-100 text-center wow slideInLeft" data-wow-duration="1s" data-wow-delay="1s">
                         <div class="link_educa m-2 h-100 text-center">
                             <div class="col-12 p-0 m-0 h-25 text-dark
                                         d-flex align-items-center justify-content-center">

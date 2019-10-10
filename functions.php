@@ -33,19 +33,24 @@ function consentidog_thumbnails() {
 
 /*** Carga de Archivos CSS y Js para el site ***/
 function consentidog_enqueue_styles() {
+    
     /*** Archivos CSS Bootstrap ***/
     /*wp_register_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );*/
     wp_register_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' );
     $dependencies = array('bootstrap');
-	wp_enqueue_style( 'consentidog-style', get_stylesheet_uri(), $dependencies ); 
+    wp_enqueue_style( 'consentidog-style', get_stylesheet_uri(), $dependencies ); 
+    wp_enqueue_style('animate', get_template_directory_uri() . '/css/animate.css' );
 }      
+
 function consentidog_enqueue_scripts() {
     /*** Archivos JS BootStrap y sus dependencias ***/
     $dependencies = array('jquery');
     wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', $dependencies, '', true );
     wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', $dependencies, '', true );
     wp_enqueue_script('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', $dependencies, '', true );
+    wp_enqueue_script('wow', get_template_directory_uri() . '/js/wow.min.js', $dependencies, '', true );
 }
+
 /*** Registro de áreas para menús de WP ***/
 function consentidog_register_menu() {
     register_nav_menu( 'header-menu', __('Header Menu'));
