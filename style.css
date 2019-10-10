@@ -9,7 +9,7 @@ Version: 0.0.1
 Text Domain: Keepin
 WordPress Available:  yes
 
-Naranja: e95231
+Naranja: e95231  -e95132
 Gris oscuro: 312b29
 */
 
@@ -54,7 +54,7 @@ body {
 }
 
 a {
-    text-decoration-color: #FE330A !important; 
+    text-decoration-color: #e95132 !important; 
 }
 
 b {
@@ -75,6 +75,10 @@ h3, .h3{
 
 h4, .h4{
     font-size: 1.2em;
+    font-family: 'Conv_SimplyCriketBold';
+    font-weight: bold;
+    padding-top: 2%;
+    padding-bottom: 5px;
 }
 
 .text-secondary{
@@ -114,10 +118,10 @@ input:focus {
     height: 113px;
     background-color: white;
     /*position: fixed;*/
-    position: static;
+    position: relative;
     width: 100%;
     top: 0px;
-    z-index: 10000 !important;
+   /* z-index: 10000 !important;*/
 }
 
 .subheader {
@@ -179,9 +183,16 @@ input:focus {
     
 }
 .header-menu a:hover{
-    color:#FE330A;
+    color:#e95132;
 
 }
+
+.current-menu-item .nav-link{
+    color:#e95132 !important;
+    text-decoration: underline;
+    text-decoration-color: #e95132 !important;
+}
+
 .buscador_txt{
     background-image: url("../theme_web_consentidog/img/lupa.png");
     background-position: right;
@@ -198,12 +209,24 @@ input:focus {
     border: thin solid grey;
 }
 
+#outer_slidehome{
+    
+    display: block;
+    position: relative;
+    /*min-height: 400px;
+    /*border: thin solid red;*/
+}
+
 #carruselHome{
-    position: absolute;
-    height: 500px;
+    position: relative;
+    /*height: 500px;*/
 }
 .carrusel-post{
-    height: 500px;
+    /*height: 500px;*/
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
 }
 .carrusel-imagen {
     /*background-size: contain;*/
@@ -217,24 +240,26 @@ input:focus {
 ***********************/
 
 .outer-form{
-    position: relative;
-    height: 470px;
+    position: absolute;
+    min-height: 300px;
 }
 
 .area-form{
-    height: 100%;
+    position: relative;
+    /*height: 100%;*/
+    min-height: 300px;
 }
 
 .bg-form-reserva-home{
-    height: 290px;
-    width: 55% !important;
+    /*height: 290px;*/
+    /*width: 55% !important;*/
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 1rem;
     border: thin solid grey;
-    position: absolute;
-    top: 10%;
+    /*position: absolute;
+    /*top: 10%;
     left: 22%;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 
@@ -252,15 +277,15 @@ input:focus {
     background-size: cover;  e95231 naranja 
     background-position: center;*/ 
     background-color:#eae7e5;
-    height: 600px;
+    height: 70vh !important;
+    /*margin-top:110px !important;*/
 }
 .area-tit-educa{
-    height: 15%;
+    height: 15% !important;
 }
 .titulo-educadog{
     font-family: 'Conv_SimplyCriketMedium';
-    font-size: 21.5pt;
-    height: 100%;
+    font-size: 24.5pt;
     color:#e95231 !important;
 }
 .titulo_educa {
@@ -275,7 +300,7 @@ input:focus {
     font-weight: bolder;
 }
 .area-cont-educa{
-    height: 85%;
+    height: 85% !important;
 }
 
 .link_educa{
@@ -306,6 +331,12 @@ input:focus {
     font-weight: light !important;
 }
 
+.more-link{
+    width: 40%;
+    font-weight: light !important;
+    color:#e95231 !important;
+}
+
     /*******HOME - CITA*******
     **************************/
 .contenedor-cita{
@@ -331,12 +362,12 @@ input:focus {
     background: white;
     float: left;
     width: 50%;
-    border: 1px solid #FE330A;
+    border: 1px solid #e95132;
 }
 .titulo_servicios {
     text-align: left;
     padding: 5px 0px 5px 15px;
-    color: #FE330a;
+    color: #e95132;
 
 }
 
@@ -359,7 +390,7 @@ input:focus {
 }
 .custom-tituloblog{
     font-size: 1.5em;
-    color: #FE330A;
+    color: #e95132;
     background-color:white;
     height: 122px !important;
 }
@@ -402,24 +433,34 @@ input:focus {
 .custom-titulo{
     text-align: center;
     font-size: 26px;
-    color: #FE330A;
+    color: #e95132;
 }
 /*Contenido*/
 .contenedor-contenido{
-    margin-top: 80px;
-    padding: 70px;
-    background: rgba(229, 229, 229, 0.7);
-    margin-left: auto;
-    margin-right: auto;
-    height: 600px;
+    text-align: justify;
+    background: rgba(229, 229, 229, 0.9);
+
+}
+       
+        /*********** INTERNAS ***********
+        ****************************/
+.contenedor-general-internas{
+    background-position: center;
+    background-blend-mode: multiply !important;
+}
+
+.area-tit-internas{
+    /*height: 15%;*/
+    background: rgba(233, 81, 50, 0.9);
+
 }
 .titulo-interna{
-    margin-top: 80px;
-    padding: 70px;
-    color: #fff;
     font-family: 'Conv_SimplyCriketMedium';
     font-size: 21.5pt;
+    height: 100%;
+    color: #fff !important; /* 312b29*/
 }
+
         /*********** BLOG ***********
         ****************************/
 .contenedor-blog{
@@ -448,7 +489,7 @@ input:focus {
     text-align: justify;
 }
 .enlace-blog{
-    text-decoration-color: #FE330A;
+    text-decoration-color: #e95132;
 }
 .contenidoInter-blog{
     background: rgba(0, 0, 0, 0.65) !important;

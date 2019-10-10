@@ -42,7 +42,7 @@
                     <?php echo do_shortcode("[wpbsearch]"); /*get_search_form();*/?>
                 </div>
             </div>
-        </div><!-- header -->
+        </div>
         
         <!--Area menu-->
         <div class="area-menu col-sm-12">
@@ -54,4 +54,5 @@
                 );
             ?>
         </div>
-    </div><!-- header --> 
+    </div><!-- header -->
+

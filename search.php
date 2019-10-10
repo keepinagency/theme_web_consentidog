@@ -52,8 +52,8 @@ $the_query = new WP_Query( $args );
         </div> 
         <?php
     else :?>
-            <div class="d-flex flex-row justify-content-center col-12 p-0 m-0 pt-5">
-                <p class="alert alert-warning mt-5">
+            <div class="d-flex flex-row justify-content-center col-12 p-0 m-0 ">
+                <p class="alert alert-warning mt-1">
                     Disculpe no encontramos ningun resultado que concida con su criterio de búsqueda.
                 </p>
             </div>
