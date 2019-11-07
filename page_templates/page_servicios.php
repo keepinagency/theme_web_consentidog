@@ -11,7 +11,7 @@ $arregloservicios = new WP_Query(array(
     'order'         => 'ASC',
 ));
 ?>    
-<div class="row contenedor-total col-md-12 p-0 m-0">
+<div id="servicios" class="row contenedor-total col-md-12 p-0 m-0">
     <?php
     if ($arregloservicios->have_posts()) :?>
         <div class="row p-0 m-0 h-100">

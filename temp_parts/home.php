@@ -58,35 +58,39 @@ $posts_slides = new WP_Query(array (
 			
 		</div>
 		
-		<div class="outer-form p-0 m-0 w-100 h-75 col-12 pl-5 pt-5 d-flex" style="z-index:1000;">
-			<div class="area-form col-sm-4 d-flex flex-column align-items-bottom h-100 m-0 p-2">
+		<div class="outer-form p-0 m-0 w-100 h-100 col-12 pl-0 pl-lg-5 pt-0 pt-lg-5 pr-0 d-flex border " style="z-index:1000;">
+			<div class="area-form col-sm-4 d-flex flex-column justify-content-center align-items-center  h-75 m-0 p-4 ">
 							
-				<div class="bg-form-reserva-home col-12 h-100 p-0 m-0" >
+				<div class="bg-form-reserva-home col-12 h-100 w-100 p-0 pt-3 pt-lg-0 pb-4 pb-lg-0 pl-4 pr-4 m-0" >
 					
 					<form class="d-flex flex-column justify-content-center align-items-center flex-wrap h-100 p-0 m-0">
 
-						<div class="form-group h-25 w-75 ">
-							<label for="fecha-llegada" class="col-12 col-form-label text-center">FECHA DE LLEGADA</label>
-							<div class="col-12">
-								<input class="form-control  text-center" 
+						<div class="form-group h-0 w-100 w-lg-75">
+							<label for="fecha-llegada" class="col-12 col-form-label text-center p-0 m-0">Fecha de Llegada</label>
+							<div class="col-12 p-0 m-0">
+								<input class="form-control  text-center p-0 m-0" 
 										type="datetime-local" 
 										value="2019-08-01T12:00:00" 
 										id="fecha-llegada">
 							</div>
 						</div>
 						
-						<div class="form-group p-0 m-0 h-25 w-75 ">
-							<label for="fecha-retiro" class="col-12 col-form-label text-center">FECHA DE RETIRO</label>
-							<div class="col-12">
-								<input class="form-control  text-center" 
+						<div class="form-group p-0 m-0 h-0 w-100 w-lg-75 p-0 m-0 ">
+							<label for="fecha-retiro" class="col-12 col-form-label text-center p-0 m-0 ">Fecha de Retiro</label>
+							<div class="col-12 p-0 m-0">
+								<input class="form-control  text-center p-0 m-0" 
 										type="datetime-local" 
 										value="2019-08-02T12:00:00" 
 										id="fecha-retiro">
 							</div>
 						</div>
 						
-						<div class="form-group text-center p-0 m-0 h-25 w-100 pt-4">
-							<button type="submit" class="btn btn-light">RESERVAR</button>
+						<?php
+							include(get_template_directory() ."/temp_parts/rest_services.php");
+						?>
+
+						<div class="form-group text-center p-0 m-0 h-0 w-100 pt-4">
+							<button type="submit" class="btn btn-primary w-75">RESERVAR</button>
 						</div>
 
 					</form>
@@ -94,7 +98,7 @@ $posts_slides = new WP_Query(array (
 				</div>
 
 			</div>
-			<div class="area-vacia col-sm-8 p-0 m-0">
+			<div class="area-vacia col-0 col-lg-8 d-none d-lg-block p-0 m-0">
 				&nbsp;
 			</div>
 		</div>

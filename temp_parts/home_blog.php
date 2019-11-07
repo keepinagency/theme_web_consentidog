@@ -3,7 +3,8 @@
 $nuevo_arreglo = new WP_Query(array(
 	'post_type'=>'post', 
     'category_name' => 'blog',
-    'order'=>'ASC',
+    'order'=>'DESC',
+    'orderby'=> 'date',
 	'posts_per_page'=>3
 ));
 ?>

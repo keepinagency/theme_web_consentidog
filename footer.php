@@ -11,10 +11,11 @@
 ?>
 
 </div><!-- /.container -->
-<footer class="footer">
+<footer class="footer border">
+	footer
 	<div class="contenedor-footer">
 		<div class="contenido-footer">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/logo_cd_footer.png" alt="Logo ConsetiDog">
+			<!--img src="<?php echo get_template_directory_uri(); ?>/img/logo_cd_footer.png" alt="Logo ConsetiDog">
 			<br /><br />
 			Lorem ipsum dolor sit amet, 
 			consectetur adipiscing elit. Duis ut blandit diam, a cursus sapien. 
@@ -23,7 +24,7 @@
 			Quisque neque ipsum, suscipit eu odio eget, mollis posuere odio. 
 			Nulla elementum dictum feugiat. 
 			Praesent suscipit, tellus a vehicula mattis, lacus dolor egestas diam, 
-			iaculis volutpat dolor massa at turpis. 
+			iaculis volutpat dolor massa at turpis. -->
 		</div>
 	</div>
 	<!--div class="menufoot col-sm-8">

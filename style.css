@@ -40,6 +40,16 @@ Gris oscuro: 312b29
 }
 
 
+/* Bootstrp definitions*/
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #e95231;
+    border-color: #e95231;
+}
+
 
 * {
     font-family: "Conv_SimplyCriket", Helvetica, Arial, sans-serif;
@@ -55,6 +65,11 @@ body {
 
 a {
     text-decoration-color: #e95132 !important; 
+    color:#e95132;
+}
+
+a:hover{
+    color: white;
 }
 
 b {
@@ -110,33 +125,50 @@ input:focus {
     outline: none;
   }
 
+/* Comportamiento responsive básicos */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    h2, .h2{
+        font-size: 1em;
+    }
+    h3, .h3{
+        font-size: 0.8em;
+    }
+}
 
-/*** HEADER ***
-*************/
+
+/****************************************** HEADER ***
+******************************************************/
 .header{
     /*border: thin solid yellow;*/
-    height: 113px;
-    background-color: white;
+    /*height: 113px;
     /*position: fixed;*/
-    position: relative;
+    /*position: relative;
+    display: block;*/
     width: 100%;
     top: 0px;
+    /*border: thin solid violet;
    /* z-index: 10000 !important;*/
+   background-color:#eae7e5 !important;/*rgba(255 , 255, 255, 0.5);*/
 }
 
 .subheader {
     height: 80px;
     background-color:#eae7e5;/*rgba(255 , 255, 255, 0.5);*/
 }
+
 .area-logo{
-    height: 100%;
+    /*height: 100%;*/
 }
 .navbar-brand{
-    line-height: 80px;
-    width: 100%;
+    /*height: 100%;
+    /*display: inline-block;
+    line-height: 100% !important;
+    /*width: 20%;
+    border: thin solid violet;*/
 }
 .imglogo{
     width: 337px;
+   /*border: thin solid yellow;*/
 }
 
 .buscador_txt{
@@ -148,12 +180,24 @@ input:focus {
     padding-top:5px;
 }
 
+/* Comportamiento responsive HEADER */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    .imglogo{
+        width: 50vw !important;
+    }
+
+    .subheader {
+        height: 10vh !important;
+    }
+}
+
+
 /** Menu header **/
 .area-menu{
     margin: 0px;
     padding: 0px;
     height: 33px;
-    width: 100%;
+    /*width: 100%;*/
     background-color: white;/*rgba(255 , 255, 255, 0.7);*/
     border-bottom: solid thin #c8c6c5;
 }
@@ -200,6 +244,21 @@ input:focus {
     background-size: contain;
 }
 
+.navbar-toggler{
+    border: thin solid rgb(150,150,150,1);
+}
+.navbar-toggler-icon {
+    
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(150,150,150, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Comportamiento responsive HEADER-MENU */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    .header-menu li{
+        background-image: none;
+        border-bottom: thin solid rgb(150,150,150,5);
+    }
+}
 
 /*** Contenedor de contenido central BODY ***
 ********************************************/
@@ -234,20 +293,13 @@ input:focus {
 
 .area-form{
     position: relative;
-    /*height: 100%;*/
     min-height: 300px;
 }
 
 .bg-form-reserva-home{
-    /*height: 290px;*/
-    /*width: 55% !important;*/
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 1rem;
     border: thin solid grey;
-    /*position: absolute;
-    /*top: 10%;
-    left: 22%;
-    /*margin-top: 30px;*/
 }
 
 
@@ -257,19 +309,36 @@ input:focus {
 }
 
 
+/* Comportamiento responsive CONTENT CENTRAL BODY y HOME - FORMULARIO*** */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+
+    .carousel-item{
+        min-height: 30vh !important;
+    }
+
+    .outer-form{
+        position: relative !important;
+        min-height: 200px;
+        
+    }
+
+    .bg-form-reserva-home{
+        border: none;
+        background-color: #eae7e5;
+    }
+}
+
+
+
+
     /*******HOME - EDUCA******
     **************************/
 .contenedor-educa{
-    /*background-image:url("../theme_web_consentidog/img/bg_educa_600px.jpg");
-    background-repeat: no-repeat; eae7e5 beige        312b29 gris oscuro
-    background-size: cover;  e95231 naranja 
-    background-position: center;*/ 
     background-color:#eae7e5;
-    height: 70vh !important;
-    /*margin-top:110px !important;*/
+    height: 60vh !important;
 }
 .area-tit-educa{
-    height: 15% !important;
+    height: 20% !important;
 }
 .titulo-educadog{
     font-family: 'Conv_SimplyCriketMedium';
@@ -278,7 +347,6 @@ input:focus {
 }
 .titulo_educa {
     color: #201716;
-    /*padding-top: 2%;*/
     font-family: 'Conv_SimplyCriketDemiBold';
     font-size: 1.1em;
     font-weight: bold;
@@ -288,28 +356,23 @@ input:focus {
     font-weight: bolder;
 }
 .area-cont-educa{
-    height: 85% !important;
+    height: 80% !important;
 }
 
 .link_educa{
     background-color: rgba(255 , 255, 255, 0.7);
-    max-height: 90%;
+    max-height: 100%;
 }
 .extracto-educa{
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-top: 5%;
-    border-top: solid thin black;
-    height: 60%;
+    
     font-weight: 600 !important;
     font-family: 'Conv_SimplyCriketMedium';
-    font-size: 14.5pt;
+    font-size: 2.1vh !important;
 }
+
 .extracto-educa p{
     font-weight: bold !important;
     max-height: 100%;
-    /*border: thin solid red;*/
-    font-size:1.3vw;
 }
 .area-btn-educa{
     height: 15%;
@@ -324,8 +387,37 @@ input:focus {
     font-weight: light !important;
     color:#e95231 !important;
 }
+/* Comportamiento responsive ******* HOME - EDUCA ********* */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    
+    .contenedor-educa{
+        min-height: 140vh !important;
+    }
+    .area-tit-educa{
+        max-height: 10vh !important;
+        /*background-color: lime;*/
+    }
+    .titulo-educadog{
+        font-size: 0.9em;
+    }
 
-    /*******HOME - CITA*******
+    .titulo_educa {
+        font-size: 0.8em;
+    }
+
+    .area-cont-educa{
+        height: 95% !important;
+    }
+
+    .extracto-educa{
+        font-size: 2.1vh !important;
+    }
+
+}
+
+
+
+    /*******HOME - CITA******* #e5e5e5
     **************************/
 .contenedor-cita{
     background-color: white;
@@ -333,7 +425,7 @@ input:focus {
 .citahome{
     font-size: 72.5pt;
     line-height: 1.1em;
-    color: #e5e5e5;
+    color: #5F5F5F;
 }
 .citaautor{
     font-family: 'Conv_SimplyCriketMedium';
@@ -342,6 +434,8 @@ input:focus {
     margin-bottom: 2%;
     color: #cccccc;
 }
+
+
     
 /******* HOME - SERVICIOS ******
 ********************************/
@@ -349,15 +443,44 @@ input:focus {
 .link_servicios{
     background: white;
     float: left;
-    width: 50%;
-    border: 1px solid #e95132;
+    border-bottom: 3px solid #e95132;
+    margin-bottom: 25px !important;
+    
 }
 .titulo_servicios {
-    text-align: left;
-    padding: 5px 0px 5px 15px;
+    background-color: lightyellow;
     color: #e95132;
-
 }
+.miniatura_servicios{
+    background-position: right;
+    height:60vh;
+    background-size: cover;
+    
+    /*border:thin solid red;*/
+}
+
+.outer_titulo_educa{
+        height: 10vh;
+    }
+/* Comportamiento responsive ******* HOME - SERVICIOS ********* */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    
+    .titulo_servicios{
+        font-size: 2vh;
+    }
+
+    .miniatura_servicios{
+        background-position: right;
+        font-size: 2vh;
+        height:30vh;
+    }
+
+    
+    
+}
+
+
+
 
     /*******HOME - BLOG*******
     **************************/
@@ -392,15 +515,19 @@ input:focus {
     text-decoration: none !important;
 }
 
+.cont_pag_numbers a:hover{
+    color: #312b29;
+}
+
     /*******HOME - FOOTER*******
     **************************/
 .contenedor-footer{
     background-color: #fff;
-    background-image:url("../theme_web_consentidog/img/bg_footer.jpg");
+    /*background-image:url("../theme_web_consentidog/img/bg_footer.jpg");
     background-repeat: no-repeat;
     background-position: right top;
-    background-size: cover;
-    height: 400px !important;
+    background-size: cover;*/
+    /*height: 400px !important;*/
 }
 .contenido-footer{
     text-align: center;
