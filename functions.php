@@ -49,6 +49,7 @@ function consentidog_enqueue_scripts() {
     wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', $dependencies, '', true );
     wp_enqueue_script('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', $dependencies, '', true );
     wp_enqueue_script('wow', get_template_directory_uri() . '/js/wow.min.js', $dependencies, '', true );
+    wp_enqueue_script('keepinjs', get_template_directory_uri() . '/js/keepin.js', '', '', true );
 }
 
 /*** Registro de áreas para menús de WP ***/

@@ -30,7 +30,7 @@ $nuevo_arreglo = new WP_Query(array(
                     <!--   -->
 
                     <div class="outer-educa col col-lg-4 p-2 m-0 text-center wow bounceInRight" 
-                                data-wow-duration="<?php echo $i;?>s" data-wow-delay="<?php echo $i;?>s">
+                                data-wow-duration="<?php echo $i;?>s" data-wow-delay="0,<?php echo $i;?>s">
 
                         <div class="link_educa m-0 p-0 pl-1 pr-1 pl-lg-2 pr-lg-2 h-100 text-center">
                             

@@ -24,7 +24,7 @@
     <div class="header <?=$classaddhome; ?> p-0 m-0 col-12 bg-transparent mw-100 ">
         
         
-        <nav class="navbar col-12 p-0 m-0" style="z-index:10000000;">
+        <nav class="navbar col-12 p-0 m-0" style="z-index:10000;">
             
             <!-- subheader >
             <div class=" col-10 col-lg-12 p-0 m-0 container row "--> 
@@ -62,7 +62,7 @@
                         aria-controls="navbarTogglerDemo01" 
                         aria-expanded="false" 
                         aria-label="Toggle navigation"
-                        style="z-index:100000;">
+                        style="z-index:10000 !important;">
                     <span class="navbar-toggler-icon "></span>
                 </button>
             <!--/div-->

@@ -4,7 +4,7 @@ $nuevo_arreglo = new WP_Query(array(
 	'post_type'=>'post', 
     'category_name' => 'servicios',
     'order'=>'ASC',
-	'posts_per_page'=>4
+	'posts_per_page'=>10
 ));
 ?>
 

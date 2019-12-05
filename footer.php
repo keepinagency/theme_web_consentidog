@@ -12,12 +12,11 @@
 
 </div><!-- /.container -->
 <footer class="footer border">
-	footer
 	<div class="contenedor-footer">
 		<div class="contenido-footer">
-			<!--img src="<?php echo get_template_directory_uri(); ?>/img/logo_cd_footer.png" alt="Logo ConsetiDog">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo_cd_footer.png" alt="Logo ConsetiDog">
 			<br /><br />
-			Lorem ipsum dolor sit amet, 
+			<!--Lorem ipsum dolor sit amet, 
 			consectetur adipiscing elit. Duis ut blandit diam, a cursus sapien. 
 			Nam volutpat mauris quis dignissim viverra. 
 			Curabitur ultricies vitae ipsum id dictum. 

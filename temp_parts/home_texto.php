@@ -9,7 +9,7 @@ $autorcita = get_option('autorcita', 'MARTIN BUBER');
         <?php echo $texthome;?>
         
         <div class="citaautor col-md-2 wow flipInX"
-            data-wow-offset="10" data-wow-delay="2s" data-wow-iteration="1" data-wow-duration="2s">
+            data-wow-offset="10" data-wow-delay="2s" data-wow-iteration="1" data-wow-duration="1s">
             <?php echo $autorcita;?>
         </div>
 
