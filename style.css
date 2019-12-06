@@ -480,7 +480,7 @@ input:focus {
     background: white;
     float: left;
     border-bottom: 3px solid #e95132;
-    margin-bottom: 25px !important;
+    margin-bottom: 15px !important;
     
 }
 .titulo_servicios {
@@ -558,22 +558,35 @@ input:focus {
     /*******HOME - FOOTER*******
     **************************/
 .contenedor-footer{
-    background-color: #fff;
-    /*background-image:url("../theme_web_consentidog/img/bg_footer.jpg");
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: cover;*/
-    /*height: 400px !important;*/
+    background-color: #312b29;
+    color: white;
 }
 .contenido-footer{
-    text-align: center;
-    padding: 8% 5% 2% 5%;
+    /*text-align: center;
+    padding: 8% 5% 2% 5%;*/
     font-family: 'Conv_SimplyCriketBook';
     font-size: 14.5pt;
 }
-        /**********************************************************
-        ************CONTENEDOR GENERAL PARA PAGES - DEFAULT*********/
-        /*Título*/
+.info-contacto{
+    text-transform: uppercase;
+    font-family: 'Conv_SimplyCriketBook';
+    font-size: 0.9em;
+    border-color: #161413 !important;
+}
+/* Comportamiento responsive ******* HOME - SERVICIOS ********* */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    .contenido-footer{
+        font-size: 8.5pt !important;
+    }
+    .info-contacto{
+        border: none !important;
+    }
+}
+
+
+    /**********************************************************
+    ************CONTENEDOR GENERAL PARA PAGES - DEFAULT*********/
+    /*Título*/
 .titulo-pages{
     color: #E5E5E5;
     padding-top: 20px;

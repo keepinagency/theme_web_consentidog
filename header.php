@@ -31,7 +31,7 @@
 
                 <!--Area logo-->
                 
-                <div class="col-10 col-lg-5 p-0 m-0 row align-items-center text-center" >
+                <div class="col-10 col-lg-5 p-0 m-0 pl-2 pt-2 row align-items-center text-center" >
                     <a class="navbar-brand m-0 p-2" href="<?php echo get_home_url(); ?>">
                         <?php
                             $custom_logo_id = get_theme_mod( 'custom_logo' );
@@ -50,9 +50,16 @@
                 </div>
 
                 <!-- Area buscador-->
-                <div class="d-none d-lg-block col-lg-5 p-0 m-0 row align-items-center text-center ">
-                    <div class="buscador w-100">
+                <div class="d-none col-lg-5 p-0 m-0 pr-4 d-lg-flex flex-row ">
+                    <!-- Spacer -->
+                    <div class="col-4 ">
+                        &nbsp;
+                    </div>
+                    <div class="buscador col-6 p-0">
                         <?php echo do_shortcode("[wpbsearch]");?>
+                    </div>
+                    <div class="col-2">
+                        &nbsp;
                     </div>
                 </div>
 

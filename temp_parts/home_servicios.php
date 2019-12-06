@@ -8,7 +8,7 @@ $nuevo_arreglo = new WP_Query(array(
 ));
 ?>
 
-<div id="servicios" class="contenedor-servicioshome p-0 m-0">
+<div id="servicios" class="row container-fluid contenedor-servicioshome p-0 m-0">
     <?php if ($nuevo_arreglo->have_posts()) :?>
         <div class="listas_servicios p-0 m-0 ">
             <?php

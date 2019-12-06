@@ -36,14 +36,17 @@ function consentidog_enqueue_styles() {
     
     /*** Archivos CSS Bootstrap ***/
     /*wp_register_style('bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.min.css' );*/
+
     wp_register_style('bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' );
     $dependencies = array('bootstrap');
     wp_enqueue_style( 'consentidog-style', get_stylesheet_uri(), $dependencies ); 
     wp_enqueue_style('animate', get_template_directory_uri() . '/css/animate.css' );
+    wp_enqueue_style('fontawesome', get_template_directory_uri() . '/css/all.css' );
 }      
 
 function consentidog_enqueue_scripts() {
     /*** Archivos JS BootStrap y sus dependencias ***/
+
     $dependencies = array('jquery');
     wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-3.2.1.slim.min.js', $dependencies, '', true );
     wp_enqueue_script('popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', $dependencies, '', true );
@@ -63,7 +66,7 @@ function busquedaform( $form ) {
     $form = '
     <form class="w-100" role="search" method="get" id="searchform" action="' . home_url( '/' ) . '">
         <div class="w-100 d-flex justify-content-center">
-            <input type="text" placeholder="BÚSQUEDA" class="buscador_txt w-50" value="' . get_search_query() . '" name="s" id="s" />
+            <input type="text" placeholder="BÚSQUEDA" class="buscador_txt w-100" value="' . get_search_query() . '" name="s" id="s" />
             <!--input type="submit" class="" id="searchsubmit" value="'. esc_attr__('Buscar') .'" /-->
         </div>
     </form>';
@@ -75,129 +78,25 @@ function custom_excerpt_length( $length){
     return 20;
 }
 
-        /*****FUNCIONES CUSTOM PARA EL PERSONZALIDOR*******
-        **************************************************/
+        /***** FUNCIONES CUSTOM PARA EL PERSONZALIDOR *******
+        *****************************************************/
 function custom_consentidog_register( $wp_customize ) {
-    /**Agrego el Panel**/
+    
+    /** Panel de opciones **/
     $wp_customize->add_panel( 'consentidog', array(
-        'title' => 'Configuraciones',
+        'title' => 'Opciones KeepIn',
         'description' => 'Opciones personales',
         'priority' => 1,
     ));
-    /*******AGREGO SECCIÓN PARA SOCIALMEDIA FOOTER**********
-    *******************************************************/
-    $wp_customize->add_section( 'SocialMediaFoot', array(
-        'title' => __( 'SocialMedia Footer', 'textdomain' ),
-        'panel' => 'consentidog',
-        'priority' => 4,
-    ));
-    /**Agrego el Setting FaceIcono**/
-    $wp_customize->add_setting( 'facelogo', array (
-        'default'        => get_template_directory_uri() .'/img/icoface.png',
-        'capability'     => 'edit_theme_options',
-        'type'           => 'option',
-    ));
-    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'face', array(
-        'label'      => __( 'Icono Facebook', 'textdomain' ),
-        'section'    => 'SocialMediaFoot',
-        'settings'   => 'facelogo',
-        'priority'   => 1,
-    )));
-    /**Agrego el Setting FaceURL**/
-    $wp_customize->add_setting( 'faceurl', array(
-        'type' => 'option',
-        'capability' => 'edit_theme_options',
-    ));
-    $wp_customize->add_control('faceurl', array(
-        'label' => __( 'Perfil Facebook', 'textdomain' ),
-        'section' => 'SocialMediaFoot',
-        'priority' => 2,
-        'type' => 'text',
-    ));
-    /**Agrego el Setting InstaIcono**/
-    $wp_customize->add_setting( 'instalogo', array (
-        'default'        => get_template_directory_uri() .'/img/icoinsta.png',
-        'capability'     => 'edit_theme_options',
-        'type'           => 'option',
-    ));
-    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'insta', array(
-        'label'      => __( 'Icono Instagram', 'textdomain' ),
-        'section'    => 'SocialMediaFoot',
-        'settings'   => 'instalogo',
-        'priority'   => 2,
-    )));
-    /**Agrego el Setting InstaURL**/
-    $wp_customize->add_setting( 'instaurl', array(
-        'type' => 'option',
-        'capability' => 'edit_theme_options',
-    ));
-    $wp_customize->add_control('instaurl', array(
-        'label' => __( 'Perfil Instagram', 'textdomain' ),
-        'section' => 'SocialMediaFoot',
-        'priority' => 2,
-        'type' => 'text',
-    ));
-    /***************AGREGO CONTACTO FOOTER******************
-    *******************************************************/
-    $wp_customize->add_section( 'ContactoFoot', array(
-        'title' => __( 'Contacto Footer', 'textdomain' ),
-        'panel' => 'consentidog',
-        'priority' => 5,
-    ));
-    /**Agrego el Setting MailIcono**/
-    $wp_customize->add_setting( 'contactologo', array (
-        'default'        => get_template_directory_uri() .'/img/contactomail.png',
-        'capability'     => 'edit_theme_options',
-        'type'           => 'option',
-    ));
-    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'contact', array(
-        'label'      => __( 'Icono Mail', 'textdomain' ),
-        'section'    => 'ContactoFoot',
-        'settings'   => 'contactologo',
-        'priority'   => 1,
-    )));
-    /**Agrego el Setting MailTexto**/
-    $wp_customize->add_setting( 'mailtexto', array(
-        'type' => 'option',
-        'capability' => 'edit_theme_options',
-    ));
-    $wp_customize->add_control('mailtexto', array(
-        'label' => __( 'Dirección Mail', 'textdomain' ),
-        'section' => 'ContactoFoot',
-        'priority' => 2,
-        'type' => 'text',
-    ));
-    /**Agrego el Setting PhoneIcono**/
-    $wp_customize->add_setting( 'phoneicono', array (
-        'default'        => get_template_directory_uri() .'/img/contactophone.png',
-        'capability'     => 'edit_theme_options',
-        'type'           => 'option',
-    ));
-    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'phone', array(
-        'label'      => __( 'Icono Phone', 'textdomain' ),
-        'section'    => 'ContactoFoot',
-        'settings'   => 'phoneicono',
-        'priority'   => 2,
-    )));
-    /**Agrego el Setting PhoneNumber**/
-    $wp_customize->add_setting( 'phonenumber', array(
-        'type' => 'option',
-        'capability' => 'edit_theme_options',
-    ));
-    $wp_customize->add_control('phonenumber', array(
-        'label' => __( 'Numero Contacto', 'textdomain' ),
-        'section' => 'ContactoFoot',
-        'priority' => 2,
-        'type' => 'text',
-    ));
-    /*******AGREGO LA SECCIÓN TEXTO O CITA DEL HOME*********
-    *******************************************************/
+
+    /************** SECCIÓN TEXTO O CITA DEL HOME *********/
     $wp_customize->add_section( 'Texto-Home', array(
-        'title' => __( 'Cita Textual Home', 'textdomain' ),
+        'title' => __( 'Home - Cita Textual', 'textdomain' ),
         'panel' => 'consentidog',
-        'priority' => 2,
+        'priority' => 1,
     ));
-    /**Agrego el Setting Texto o Cita del Home**/
+
+    /** Setting Texto o Cita del Home **/
     $wp_customize->add_setting( 'textohome', array (
         'type' => 'option',
         'default' => 'Los ojos de un animal tienen el poder de hablar un gran lenguaje',
@@ -209,7 +108,8 @@ function custom_consentidog_register( $wp_customize ) {
         'type' => 'text',
         'priority' => 1,
     ));
-    /**Agrego el Setting Autor Cita del Home**/
+
+    /** Setting Autor Cita del Home **/
     $wp_customize->add_setting( 'autorcita', array (
         'type' => 'option',
         'default' => 'MARTIN BUBER',
@@ -221,7 +121,126 @@ function custom_consentidog_register( $wp_customize ) {
         'type' => 'text',
         'priority' => 2,
     ));
+
+
+
+    /******* SECCIÓN PARA SOCIALMEDIA FOOTER **********/
+    $wp_customize->add_section( 'SocialMediaFoot', array(
+        'title' => __( 'Footer - Social Media', 'textdomain' ),
+        'panel' => 'consentidog',
+        'priority' => 4,
+    ));
+
+    /** el Setting FaceIcono **/
+    /*$wp_customize->add_setting( 'facelogo', array (
+        'default'        => get_template_directory_uri() .'/img/icoface.png',
+        'capability'     => 'edit_theme_options',
+        'type'           => 'option',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'face', array(
+        'label'      => __( 'Icono Facebook', 'textdomain' ),
+        'section'    => 'SocialMediaFoot',
+        'settings'   => 'facelogo',
+        'priority'   => 1,
+    )));*/
+
+    /**Agrego el Setting FaceURL**/
+    /*$wp_customize->add_setting( 'faceurl', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('faceurl', array(
+        'label' => __( 'Perfil Facebook', 'textdomain' ),
+        'section' => 'SocialMediaFoot',
+        'priority' => 2,
+        'type' => 'text',
+    ));*/
+
+    /** Setting Insta Icono **/
+    $wp_customize->add_setting( 'instalogo', array (
+        'default'        => get_template_directory_uri() .'/img/icoinsta.png',
+        'capability'     => 'edit_theme_options',
+        'type'           => 'option',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'insta', array(
+        'label'      => __( 'Icono Instagram', 'textdomain' ),
+        'section'    => 'SocialMediaFoot',
+        'settings'   => 'instalogo',
+        'priority'   => 1,
+    )));
+
+    /** Setting InstaURL **/
+    $wp_customize->add_setting( 'instaurl', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('instaurl', array(
+        'label' => __( 'Url de perfil Instagram', 'textdomain' ),
+        'section' => 'SocialMediaFoot',
+        'priority' => 2,
+        'type' => 'text',
+    ));
+
+
+    /********** CONTACTO FOOTER******************/
+    $wp_customize->add_section( 'ContactoFoot', array(
+        'title' => __( 'Footer - Contacto', 'textdomain' ),
+        'panel' => 'consentidog',
+        'priority' => 5,
+    ));
+
+    /** Setting MailIcono **/
+    $wp_customize->add_setting( 'contactologo', array (
+        'default'        => get_template_directory_uri() .'/img/contactomail_white.png',
+        'capability'     => 'edit_theme_options',
+        'type'           => 'option',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'contact', array(
+        'label'      => __( 'Icono Mail', 'textdomain' ),
+        'section'    => 'ContactoFoot',
+        'settings'   => 'contactologo',
+        'priority'   => 1,
+    )));
+
+    /** Setting MailTexto **/
+    $wp_customize->add_setting( 'mailtexto', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('mailtexto', array(
+        'label' => __( 'Dirección Mail', 'textdomain' ),
+        'section' => 'ContactoFoot',
+        'priority' => 2,
+        'type' => 'text',
+    ));
+
+    /** Setting PhoneIcono **/
+    $wp_customize->add_setting( 'phoneicono', array (
+        'default'        => get_template_directory_uri() .'/img/contactophone.png',
+        'capability'     => 'edit_theme_options',
+        'type'           => 'option',
+    ));
+    $wp_customize->add_control( new WP_Customize_Image_Control($wp_customize, 'phone', array(
+        'label'      => __( 'Icono Phone', 'textdomain' ),
+        'section'    => 'ContactoFoot',
+        'settings'   => 'phoneicono',
+        'priority'   => 2,
+    )));
+
+    /** Setting PhoneNumber **/
+    $wp_customize->add_setting( 'phonenumber', array(
+        'type' => 'option',
+        'capability' => 'edit_theme_options',
+    ));
+    $wp_customize->add_control('phonenumber', array(
+        'label' => __( 'Numero Contacto', 'textdomain' ),
+        'section' => 'ContactoFoot',
+        'priority' => 2,
+        'type' => 'text',
+    ));    
 }
+
+
     /************** METABOXES PARA EL TITULO ****************
     ********************************************************/
 function meta_box_titulo() {
