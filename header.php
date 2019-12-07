@@ -49,17 +49,34 @@
                     &nbsp;
                 </div>
 
+                <?php
+
+                $url_fb = get_option( 'faceurl', 'http://www.facebook.com' );
+                $url_in = get_option( 'instaurl', 'http://www.instagram.com' );
+                $icono_fb = get_option( 'facelogo', '/img/icoface.png' );
+                $icono_in = get_option( 'instalogo', '/img/icoinsta.png' );
+
+                $text_ph = get_option( 'phonenumber', '(9999)999.99.99' );
+                $icono_ph = get_option( 'phoneicono', '/img/contactophone.png' );
+                ?>
                 <!-- Area buscador-->
                 <div class="d-none col-lg-5 p-0 m-0 pr-4 d-lg-flex flex-row ">
                     <!-- Spacer -->
-                    <div class="col-4 ">
+                    <div class="col-2 ">
                         &nbsp;
                     </div>
                     <div class="buscador col-6 p-0">
                         <?php echo do_shortcode("[wpbsearch]");?>
                     </div>
-                    <div class="col-2">
-                    <img src="<?php echo get_template_directory_uri().'/img/ico-instagram-gold.png'?>" />
+                    <div class="col-4">
+                        <div class="col-12">
+                            <a href="https://www.instagram.com/vipconsentidogccs/" target="_blank">
+                                <img src="<?php echo get_template_directory_uri().'/img/ico-instagram-gold.png'?>" />
+                            </a>
+                            <a href="https://wa.me/584241061261?text=Hola,%20les%20escribo%20desde%20www.consentidog.com" target="_blank">
+                                <img src="<?php echo get_template_directory_uri().'/img/ico-whatsapp-brown.png'?>" />
+                            </a>
+                        </div>
                     </div>
                 </div>
 

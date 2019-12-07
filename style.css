@@ -234,6 +234,7 @@ input:focus {
     text-transform: uppercase;
     font-family: 'Conv_SimplyCriketBook';
     font-size: 0.8em;
+
     background-image: url("../theme_web_consentidog/img/lineadiv_menu.png");
     background-position: right;
     background-repeat: no-repeat;
@@ -261,6 +262,11 @@ input:focus {
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.telf-header {
+    font-size: 0.6em !important;
+}
+
 
 .navbar-toggler{
     border: thin solid rgb(150,150,150,1);
@@ -630,6 +636,7 @@ input:focus {
         ****************************/
 .contenedor-general-internas{
     background-position: center;
+    background-size: cover;
     background-blend-mode: multiply !important;
 }
 

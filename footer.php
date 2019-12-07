@@ -11,7 +11,7 @@
 ?>
 
 </div><!-- /.container -->
-<footer class="footer m-0 p-0">
+<footer id="contacto" class="footer m-0 p-0">
 	<div class="contenedor-footer m-0 p-0 pb-md-2">
 
 		<div class="col-12 col-md-12 d-md-flex flex-md-row p-md-2 text-center justify-content-center">

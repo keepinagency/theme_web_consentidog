@@ -126,7 +126,7 @@ function custom_consentidog_register( $wp_customize ) {
 
     /******* SECCIÓN PARA SOCIALMEDIA FOOTER **********/
     $wp_customize->add_section( 'SocialMediaFoot', array(
-        'title' => __( 'Footer - Social Media', 'textdomain' ),
+        'title' => __( 'Social Media', 'textdomain' ),
         'panel' => 'consentidog',
         'priority' => 4,
     ));
