@@ -59,7 +59,7 @@
                         <?php echo do_shortcode("[wpbsearch]");?>
                     </div>
                     <div class="col-2">
-                        &nbsp;
+                    <img src="<?php echo get_template_directory_uri().'/img/ico-instagram-gold.png'?>" />
                     </div>
                 </div>
 

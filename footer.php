@@ -12,7 +12,7 @@
 
 </div><!-- /.container -->
 <footer class="footer m-0 p-0">
-	<div class="contenedor-footer m-0 p-0 pb-md-5">
+	<div class="contenedor-footer m-0 p-0 pb-md-2">
 
 		<div class="col-12 col-md-12 d-md-flex flex-md-row p-md-2 text-center justify-content-center">
 
@@ -27,7 +27,7 @@
 						<i class="fas fa-phone-square-alt"></i> <?= $text_ph;?>
 					</a>
 				</div>
-				<div class="col-md-4 info-contacto p-2">
+				<div class="col-md-4 info-contacto p-2 d-none d-md-block">
 					<a href="mailto:<?= $icono_ct;?>">
 						<i class="fas fa-envelope"></i> <?= $text_ct;?>
 					</a>
@@ -36,11 +36,11 @@
 
 		</div>
 
-		<div class="ctas-footer col-12 col-md-12 d-md-flex flex-md-row p-2 justify-content-center">
+		<div class="ctas-footer col-12 col-md-12 d-md-flex flex-md-row p-0 justify-content-center">
 
 			<div class="col-11 d-md-flex p-0 pb-lg-0 pb-3 pt-lg-3 h-100">
 
-				<div class="col-12 col-lg-4 m-0 p-0 pt-md-3 pl-2 text-center">
+				<div class="col-12 col-md-4 m-0 p-0 pt-md-2 pl-2 text-center ">
 					<button type="button" class="btn btn-primary w-75" 
 						onclick="window.location.href = '#carruselHome'" >
 						SOLICITAR RESERVA
@@ -53,17 +53,28 @@
 					
 				</div>
 
-				<div class="col-12 col-lg-8 m-0 p-0 pl-2 text-center d-flex flex-row">
-					<div class="col-md-7 d-none d-md-block">
-						&nbsp;
-					</div>
-					<div class="col-12 col-lg-3 pt-3 pt-md-0 pr-md-4">
-						<img src="<?php echo get_template_directory_uri().'/img/logo_cd_footer_gold.png'?>" />
-					</div>
+				<div class="texto-footer col-12 col-md-4 
+							m-0 p-0 pt-4 pt-md-2 d-flex flex-row text-muted">
+					<p class="text-center w-100">
+						<b>Para tu mejor amigo, el mejor lugar!</b><br /><br />
+						WhatsApp: <a href="https://wa.me/584241061261?text=Hola,%20les%20escribo%20desde%20www.consentidog.com">+58 412 7189400</a><br />
+						Atención de 8:00am a 6:00pm
+					</p>
+				</div>
+
+				<div class="col-12 col-md-4 m-0 p-0 pl-2 text-center d-flex flex-row justify-content-center align-top">
+					
+					<img height="100px" 
+						src="<?php echo get_template_directory_uri().'/img/logo_cd_footer_gold.png'?>" 
+						class="p-0 m-0"/>
+					
 				</div>
 			</div>
 		</div>
 
+		<div class="copy-footer col-12 p-0 pt-2 pb-1 text-center">
+			Otro sitio web desarrollado, a medida, por KeepIn Agency. <a href="http://www.keepinagency.com" target="_blank">www.keepinagency.com</a>
+		</div>
 	</div>
 </footer>
 
@@ -74,7 +85,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title" id="exampleModalLabel">
-					Solicitar mas información
+					Indique su correo para contactarle:
 				</h5>
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 				<span aria-hidden="true">&times;</span>
@@ -88,9 +99,11 @@
 							action="<?php echo get_template_directory_uri().'/temp_parts/solicitamasinfo.php'; ?>" novalidate>
 					<div class="h-0 w-100 w-lg-75 d-flex flex-row pb-2">
 						<div class="form-group col-12 p-0 m-0">
-							<label for="correo" class="col-12 col-form-label-sm text-center p-0 m-0 ">Correo Electrónico:</label>
+							<!--label for="correo" class="col-12 col-form-label-sm text-center p-0 m-0 ">
+								Correo Electrónico:
+							</label-->
 							<input class="form-control form-control-sm text-center p-0 m-0" type="email"
-									value="" 
+									value="" placeholder="ej: sucorreo@correo.com"
 									id="correo" name="correo" required>
 						</div>	
 					</div>

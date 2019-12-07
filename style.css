@@ -96,6 +96,11 @@ h4, .h4{
     padding-bottom: 5px;
 }
 
+input::placeholder { 
+    font-size: 0.9em; 
+    font-style: italic;
+}
+
 .text-secondary{
     color:#cccccc !important;
 }
@@ -572,6 +577,21 @@ input:focus {
     font-family: 'Conv_SimplyCriketBook';
     font-size: 0.9em;
     border-color: #161413 !important;
+}
+.texto-footer{
+    font-family: 'Conv_SimplyCriketBook';
+    font-size: 0.8em;
+    /*color: #7c7c7c !important;*/
+}
+.texto-footer a{
+    font-family: 'Conv_SimplyCriketBook';
+    font-size: 0.8em;
+    /*color: #161413 !important;*/
+}
+.copy-footer{
+    font-family: 'Conv_SimplyCriketBook';
+    font-size: 0.7em;
+    color: #161413 !important;
 }
 /* Comportamiento responsive ******* HOME - SERVICIOS ********* */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
