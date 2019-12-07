@@ -534,10 +534,10 @@ input:focus {
 .link_blog{
     float: left;
     text-align: center;
-    width: 33%;
+    /*width: 33%;
     padding: 5px;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;*/
     background-color:white;
 }
 .custom-tituloblog{
@@ -660,10 +660,10 @@ input:focus {
 }
 .link-entradablog{
     display: inline-block;
-    width: 30%;
+    /*width: 30%;*/
     border: thin solid black;
     text-align: center;
-    margin: 10px;
+    /*margin: 10px;*/
 }
 .titulo-entradablog{
     font-size: 18px;
@@ -679,6 +679,8 @@ input:focus {
     background: rgba(0, 0, 0, 0.65) !important;
     color: #E5E5E5;
 }
+
+
         /*********** SERVICIOS ***********
         *********************************/
 .btnservicios{ 

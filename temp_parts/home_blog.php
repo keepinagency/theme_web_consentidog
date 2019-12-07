@@ -15,10 +15,12 @@ $nuevo_arreglo = new WP_Query(array(
                         d-flex align-items-center 
                         justify-content-center">Consenti<b>Notas</b>
             </div>
+            <div class="row col-12 d-flex flex-column flex-md-row p-0 m-0">
             <?php
-            while ($nuevo_arreglo->have_posts()) :
-                $nuevo_arreglo->the_post();?>
-                    <div class="link_blog col-md-4" >  
+                while ($nuevo_arreglo->have_posts()) :
+                    $nuevo_arreglo->the_post();
+                    ?>
+                    <div class="link_blog col-12 col-md-4 w-100 " >
                         <div class="miniatura_blog d-flex align-items-end  p-0 m-0"
                                 style="background-image: url('<?php echo the_post_thumbnail_url('');?>'); 
                                     height:400px;
@@ -30,8 +32,12 @@ $nuevo_arreglo = new WP_Query(array(
                                         </h4>
                                     </a>
                         </div> 
+                        <div class="contenidoInter-blog pr-5 pl-5"><?php the_excerpt(); ?></div>
                     </div>
-            <?php endwhile;?>
+                <?php 
+                endwhile;
+                ?>
+            </div>
 		</div>
         
     <?php endif;?>

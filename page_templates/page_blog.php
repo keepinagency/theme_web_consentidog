@@ -13,7 +13,8 @@ $arregloblog = new WP_Query(array(
     'paged'         => $paginasblog
 ));
 ?>
-<div id="outer_slidehome" class="d-flex flex-column p-0 m-0 h-100">
+
+<div id="outer_slidehome" class="content_blog d-flex flex-column p-0 m-0 h-100 ">
     <div id="carruselHome" class="carousel slide p-0 m-0 w-100 h-100 d-block col-12" data-ride="carousel" style="z-index:800; ">
         <?php    
         $stickies = get_option( 'sticky_posts' );
@@ -29,7 +30,7 @@ $arregloblog = new WP_Query(array(
 
             if ( $the_query->have_posts() ) { 
                 ?>
-                <div class="carousel-inner " >
+                <div class="carousel-inner  p-0 m-0" >
                     <?php 
                     $i=1;
                     /*while($arregloblog->have_posts()) : 
@@ -38,16 +39,17 @@ $arregloblog = new WP_Query(array(
                         $the_query->the_post();
                     ?>
 
-                        <div class="carousel-item <?php if ($i == 1) echo 'active'; ?> h-100"
-                            style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); min-height: 70vh !important;"> 
+                        <div class="carousel-item <?php if ($i == 1) echo 'active'; ?> h-100 "
+                            style="background-image: url('<?php echo get_the_post_thumbnail_url(); ?>'); "> 
 
-                            <div class="outer-contenslide d-flex flex-row" style="min-height: 70vh !important;">
+                            <div class="outer-contenslide d-flex flex-row h-100" >
 
-                                <div class="col-8 " >
+                                <div class="col-md-8 d-none d-md-block" >
                                     &nbsp;
                                 </div>
 
-                                <div class="titulo-blog col-4 d-flex flex-column align-items-center align-self-stretch justify-content-center">
+                                <div class="titulo-blog col-12 col-md-4 d-flex flex-column h-100
+                                        align-items-center align-self-stretch justify-content-center">
                                     <div class="text-center">
                                         <a class="enlace-blog text-uppercase" href="<?php the_permalink(); ?>" >
                                             <h3><?php echo esc_html( get_the_title() ); ?></h3>
@@ -101,37 +103,38 @@ $arregloblog = new WP_Query(array(
     </div>
 </div>
 
-<!--div class="carrusel-imagen" style="background-image:url('<?php //echo get_the_post_thumbnail_url(); ?>'); 
-                                    min-height: 520px; background-position: bottom right;">
-    &nbsp;
-</div-->      
+    
         
-<div class="row contenedor-blogHome p-0 m-0">
+<div class="row contenedor-blogHome p-0 m-0 pb-4">
     <?php if ($arregloblog->have_posts()) :?>
-        <div class="listas_blogHome col-md-12">
+        <div class="listas_blogHome col-md-12 p-0 m-0">
             <div id="consentinotas"
-                        class="custom-tituloblog text-uppercase h-25 
+                        class="custom-tituloblog text-uppercase h-25 row col-12
                         d-flex align-items-center 
                         justify-content-center"><?php echo get_post_meta($post->ID, 'titulo', true); ?>
             </div>
-            <?php
-            while ($arregloblog->have_posts()) :
-                $arregloblog->the_post();?>
-                    <div class="link_blog col-md-4" >  
-                        <div class="miniatura_blog d-flex align-items-end  p-0 m-0"
-                                style="background-image: url('<?php echo the_post_thumbnail_url('');?>'); 
-                                    height:400px;
-                                    background-size: cover;"> 
-                                    <a class="titulo-blog w-100 h-50 
-                                              d-flex align-items-center text-center" href="<?php the_permalink(); ?>" >      
-                                        <h4 class="enlace-blog text-uppercase text-center text-white w-100">
-                                            <?php the_title(); ?>
-                                        </h4>
-                                    </a>
-                        </div> 
-                        <div class="contenidoInter-blog pr-5 pl-5"><?php the_excerpt(); ?></div>
-                    </div>
-            <?php endwhile;?>
+            <div class="row col-12 d-flex flex-column flex-md-row p-0 m-0">
+                <?php
+                while ($arregloblog->have_posts()) :
+                    $arregloblog->the_post();?>
+                        <div class="link_blog col-12 col-md-4 w-100 " >  
+                            <div class="miniatura_blog d-flex align-items-end  p-0 m-0"
+                                    style="background-image: url('<?php echo the_post_thumbnail_url('');?>'); 
+                                        height:400px;
+                                        background-size: cover;"> 
+                                        <a class="titulo-blog w-100 h-50 
+                                                d-flex align-items-center text-center" href="<?php the_permalink(); ?>" >      
+                                            <h4 class="enlace-blog text-uppercase text-center text-white w-100">
+                                                <?php the_title(); ?>
+                                            </h4>
+                                        </a>
+                            </div> 
+                            <div class="contenidoInter-blog pr-5 pl-5"><?php the_excerpt(); ?></div>
+                        </div>
+                    <?php 
+                endwhile;
+                ?>
+            </div>
 		</div>
         <div class="cont_pag_numbers container-fluid text-center">
             <?php 
