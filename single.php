@@ -20,7 +20,7 @@ get_header();
                 </div>
                 
             </div>
-            <div class="row col-12 p-0 m-0 mb-5 " >
+            <div class="row col-12 p-0 m-0 mb-2 " >
             <?php
                 while (have_posts()) : the_post();?>
                     <div class="contenedor-contenido col-12 pt-4 pl-4 pr-4 m-0 w-100">
