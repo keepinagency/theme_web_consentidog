@@ -8,7 +8,7 @@ $nuevo_arreglo = new WP_Query(array(
 	'posts_per_page'=>3
 ));
 ?>
-<div class="row contenedor-blogHome p-0 m-0">
+<div class="row contenedor-blogHome p-0 m-0 pb-3">
     <?php if ($nuevo_arreglo->have_posts()) :?>
         <div class="listas_blogHome col-md-12">
             <div class="custom-tituloblog text-uppercase
@@ -32,7 +32,7 @@ $nuevo_arreglo = new WP_Query(array(
                                         </h4>
                                     </a>
                         </div> 
-                        <div class="contenidoInter-blog pr-5 pl-5"><?php the_excerpt(); ?></div>
+                        <div class="contenidoInter-blog pr-4 pl-4"><?php the_excerpt(); ?></div>
                     </div>
                 <?php 
                 endwhile;

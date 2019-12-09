@@ -6,7 +6,18 @@
 
     $server = ( isset($_SERVER['HTTPS']) ? 'https' : 'http' ). "://" . $_SERVER['SERVER_NAME'];
     $port   = ( !empty($_SERVER['SERVER_PORT']) ? ':'.$_SERVER['SERVER_PORT'] : '' );
-    $base_url = $server.$port.'/'.$domain_name.'/index.php?reservaenviada=1';
+
+    $pos_v  = strpos($_SERVER['REQUEST_URI'],"v");
+    $pos_sl = strpos($_SERVER['REQUEST_URI'],"v",$pos_v);
+    $vers   = ( $pos_v > 0 ? substr($_SERVER['REQUEST_URI'],$pos_v,6) : '' );
+    
+    if ($vers){
+        $base_url = $server.$port.'/'.$domain_name.'/'.$vers.'/index.php?reservaenviada=1';
+    }else{
+        $base_url = $server.$port.'/'.$domain_name.'/index.php?reservaenviada=1';
+    }
+
+    //$base_url = $server.$port.'/'.$domain_name.'/index.php?reservaenviada=1';
     //die();
     //$from = "web@consentidog.com";
     $from = $_POST['correo'];

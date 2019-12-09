@@ -50,13 +50,14 @@ $nuevo_arreglo = new WP_Query(array(
                                 <?php the_content();?>
                             </div>
 
-                            <!--div class="area-btn-educa">
-                                <form action="<?php //echo get_permalink();?>">
+                            <div class="area-btn-educa">
+                                &nbsp;sss
+                                <!--form action="<?php //echo get_permalink();?>">
                                     <input class="btn btn-light btn-masinfo" 
                                         type="submit" name="solicitar" 
                                         value ="MÁS INFO">
-                                </form>
-                            </div-->
+                                </form-->
+                            </div>
                         </div>
 
                     </div>

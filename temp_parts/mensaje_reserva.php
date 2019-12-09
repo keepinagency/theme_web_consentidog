@@ -1,6 +1,6 @@
 <?php
 $texthome = get_option('textoreserva', 'Su reserva ha sido registrada con éxito, se le estará contactando a la brevedad posible.');
-$autorcita = get_option('gracaisreserva', '¡Gracias por elegirnos!');
+$autorcita = get_option('graciasreserva', '¡Gracias por elegirnos!');
 ?>
 <div class="contenedor-cita row container-fluid p-0 m-0 d-flex flex-column">
     <div class="imggracias " style="background-image:url('<?php echo get_template_directory_uri(); ?>/img/gracias.jpg'); 
